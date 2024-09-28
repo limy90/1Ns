@@ -1,102 +1,13 @@
-# 一些希望走直连的规则，主要是游戏平台的下载cdn链接，这些链接不需要节点也能有很好的速度
-# 还有一些网站的关键接口，这些接口往往reject掉会造成网页很慢，在这里声明防止reject
-DOMAIN-SUFFIX,xboxlive.com
-DOMAIN-SUFFIX,gog.com
-DOMAIN-SUFFIX,steamcontent.com
-DOMAIN,steam.cdn.webra.ru
-DOMAIN,steam.cdn.orcon.net.nz
-DOMAIN,steam.cdn.slingshot.co.nz
-DOMAIN,steam.cdn.on.net
-DOMAIN,telus.cdn.steampipe.steamcontent.com
-DOMAIN,f3b7q2p3.ssl.hwcdn.net
-DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
-DOMAIN,steampipe-kr.akamaized.net
-DOMAIN,steampipe-partner.akamaized.net
-DOMAIN,steampipe.akamaized.net
-DOMAIN,steam.eca.qtlglb.com
-DOMAIN,steam.naeu.qtlglb.com
-DOMAIN,steam.ru.qtlglb.com
-DOMAIN,steam.apac.qtlglb.com
-DOMAIN,level3.cdn.steampipe.steamcontent.com
-DOMAIN,steampipe-partner.secure2.footprint.net
-DOMAIN,google.cdn.steampipe.steamcontent.com
-DOMAIN,google2.cdn.steampipe.steamcontent.com
-DOMAIN,edge.steam-dns.top.comcast.net
-DOMAIN,edgecast.cdn.steampipe.steamcontent.com
-DOMAIN,act.hoyoverse.com
-DOMAIN-SUFFIX,cdn.ubi.com
-DOMAIN-SUFFIX,imgse.com
-DOMAIN,epicgames-download1.akamaized.net
-DOMAIN,ssl-lvlt.cdn.ea.com
-DOMAIN-SUFFIX,azure.cn
+DOMAIN-SUFFIX,trx.sd
+DOMAIN-SUFFIX,011114.xyz
+DOMAIN-SUFFIX,828999.xyz
+DOMAIN-SUFFIX,pc528.net
+DOMAIN-KEYWORD,cn
+DOMAIN-KEYWORD,douyin
 
-# 带有CDN的域名
-DOMAIN,font.alnk.cn
-DOMAIN,cdn.xxhzm.cn
-DOMAIN,jsd.cdn.zzko.cn
-DOMAIN,fast.hermapi.com
-DOMAIN-SUFFIX,webcache.cn
-DOMAIN-SUFFIX,zstatic.net
-DOMAIN-SUFFIX,akass.cn
-DOMAIN-SUFFIX,jsdmirror.com
-DOMAIN,use.sevencdn.com
-DOMAIN-SUFFIX,7ed.net
-DOMAIN-SUFFIX,webstatic.cn
-DOMAIN-SUFFIX,apad.pro
-DOMAIN-SUFFIX,cooluc.com
-DOMAIN-SUFFIX,codelife.cc
-DOMAIN-SUFFIX,sustech.edu.cn
-DOMAIN-SUFFIX,staticfile.net
-DOMAIN-SUFFIX,cqupt.edu.cn
-DOMAIN-SUFFIX,pushplus.plus
-DOMAIN-SUFFIX,cqrcb.com
-DOMAIN-SUFFIX,midea.com
-DOMAIN-SUFFIX,smartmidea.net
-DOMAIN-SUFFIX,hwwt8.com
-DOMAIN-SUFFIX,yumchina.com
-DOMAIN-SUFFIX,4008123123.com
-DOMAIN-SUFFIX,mijia.tech
-DOMAIN-SUFFIX,xiaoaisound.com
-DOMAIN-SUFFIX,hzshudian.com
-DOMAIN-SUFFIX,lanfanapp.com
-DOMAIN-SUFFIX,cpatrk.net
-DOMAIN-SUFFIX,vemarsdev.com
-DOMAIN-SUFFIX,bosszhipin.com
-DOMAIN-SUFFIX,yonghuivip.com
-DOMAIN,api.sublink.dev
-DOMAIN,api.nexconvert.com
-DOMAIN,amyconvert.com
-DOMAIN,immconvert.com
-DOMAIN-SUFFIX,ql1d.com
-DOMAIN-SUFFIX,zlpub.com
-DOMAIN-SUFFIX,zlpub.cn
-DOMAIN-SUFFIX,zlsaas.cn
-DOMAIN-SUFFIX,zlbus.cn
-DOMAIN-SUFFIX,chinazhile.com
-DOMAIN-SUFFIX,zleco.cn
-DOMAIN-SUFFIX,bytefcdnrd.com
-DOMAIN-SUFFIX,wxlivecdn.com
-DOMAIN-SUFFIX,edgesrv.com
-DOMAIN-SUFFIX,10155.com
-DOMAIN-SUFFIX,tastientech.com
 
-DOMAIN,lainbo.com
-DOMAIN,talk.lainbo.com
-DOMAIN,ghproxy.lainbo.com
-DOMAIN,monaco-diff.lainbo.dev
-DOMAIN,monaco.lainbo.dev
-DOMAIN,deeplx.eeff.fun
-DOMAIN-SUFFIX,ours.day
-
-PROCESS-NAME,WeChat
-PROCESS-NAME,WeChat.exe
-PROCESS-NAME,QuarkCloudDrive
-PROCESS-NAME,QuarkCloudDrive.exe
-PROCESS-NAME,aDrive
-PROCESS-NAME,aDrive.exe
-PROCESS-NAME,ToDesk
-PROCESS-NAME,ToDesk.exe
-PROCESS-NAME,rustdesk
-PROCESS-NAME,rustdesk.exe
-PROCESS-NAME,AskLink.exe
-PROCESS-NAME,com.taobao.taobao
+#DOMAIN-SUFFIX,live.com,🇭🇰 香港自动',
+#DOMAIN-KEYWORD,cn,🔗 无需代理',
+# 'PROCESS-NAME,Telegram.exe,VK-US', // `Weiyun.exe`这个源进程名
+# 'IP-ASN,204174,🔗 无需代理,no-resolve',
+# 'DST-PORT,22,✈️ 节点选择', // 表示所有的22端口都走`✈️ 节点选择`
