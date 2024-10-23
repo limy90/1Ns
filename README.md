@@ -2,10 +2,18 @@
 
  [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
  [规则参考](https://github.com/lainbo/gists-hub/tree/master/src/Clash/List)
-- 仅保证支持 clash 内核软件 (clashx, openclash, clash for windows 等等...)
-- 需要使用订阅转换服务，(我用的 https://url.v1.mk/ ，理论上有「远程配置」或「自定义配置功能」的订阅转换服务都可以，有能力也可以自建 https://github.com/tindy2013/subconverter )，这里都订阅转换服务的安全性不做保证，自行判断。
 
 =========================
+制作分流策略组
+命名：文件命名随意，但是一定是英文+以 .ini 结尾。
+
+.ini 配置文件中：
+ruleset 指的是配配置中包含的分流规则，
+custom_proxy_group 指的是最终在Clash中呈现的分流策略组及其排序。
+
+ruleset 排序原则：
+重要直连分流规则 > 去广告规则 > 小分流 > 国内外大分流 > 补充规则。
+策略组的排序非常重要，因为分流策略组的匹配是按照至上而下收录，匹配到了就停止不再往下
 
 ## 进阶配置
 
