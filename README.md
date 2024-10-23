@@ -7,15 +7,6 @@
 
 =========================
 
-
-## 写在前面
-鉴于每人的需求不同，**建议 fork 本仓库!!!**，将以下规则链接你的仓库的链接，以便灵活改动
-
-1. 在 Github 新建一个属于自己的仓库(如: MyClashRule)(具体注册账号，新建仓库就不赘述了)
-2. 在 MyClashRule 下新建一个文件（如本仓库的[rule_provider_config](rule_provider_config.yaml)），不熟悉 Github 的在仓库首页找到 「Add file」 按钮，在编辑框粘贴文件中的的内容，点击下方 commit changs 按钮
-3. 完成步骤 2 后会跳转到建好的文件界面，右上角找到「Raw」点击跳转到文件下载链接，浏览器地址栏复制该链接
-4. 在订阅转换网站找到「远程配置」，粘贴步骤 3 复制的链接，然后在下拉框选择该链接的选项。
-
 ## 进阶配置
 
 以下规则说明均摘自 [订阅转换规则](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
