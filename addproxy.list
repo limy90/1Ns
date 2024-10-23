@@ -1,6 +1,6 @@
 #Google
-#DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-#DOMAIN-SUFFIX,services.googleapis.cn
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,play.googleapis.com
 DOMAIN,connectivitycheck.gstatic.com
