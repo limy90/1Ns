@@ -1,11 +1,9 @@
 # 打造一个属于自己的clash分流配置
 
+ [Fork]([https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6](https://github.com/chinnsenn/ClashCustomRule))
+
 - 仅保证支持 clash 内核软件 (clashx, openclash, clash for windows 等等...)
 - 需要使用订阅转换服务，(我用的 https://url.v1.mk/ ，理论上有「远程配置」或「自定义配置功能」的订阅转换服务都可以，有能力也可以自建 https://github.com/tindy2013/subconverter )，这里都订阅转换服务的安全性不做保证，自行判断。
-
-=========================
-
-本人已废弃原有方案，使用 clash 的 rule-provider 特性替代，如需查看旧方案查看 [deprecated/README.md](deprecated/README.md)
 
 =========================
 
