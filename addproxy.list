@@ -1,3 +1,5 @@
+DOMAIN-SUFFIX,nodeseek.com
+
 #Google
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,services.googleapis.cn
@@ -6,6 +8,9 @@ DOMAIN-SUFFIX,play.googleapis.com
 DOMAIN,connectivitycheck.gstatic.com
 DOMAIN-SUFFIX,android.clients.google.com
 
-
-DOMAIN-SUFFIX,nodeseek.com
-DOMAIN-SUFFIX,nodeseekkkkkkkk.com
+#Twitch
+DOMAIN-KEYWORD,ttvnw
+DOMAIN-SUFFIX,ext-twitch.tv
+DOMAIN-SUFFIX,jtvnw.net
+DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-SUFFIX,twitch-ext.rootonline.de
