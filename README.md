@@ -12,8 +12,11 @@
 ini 配置文件中：
 - ruleset 指的是配配置中包含的分流规则
 - custom_proxy_group 指的是最终在Clash中呈现的分流策略组及其排序
-- Select 后面有多少 []XXXX 代表该策略组有多少种规则可以选，可以自定义，一般用 上飘点 分隔，最后一项后不需要加 **上飘点**
-> custom_proxy_group=无需代理`select`[]DIRECT`[]节点选择
+- Select 后面有多少 []XXXX 代表该策略组有多少种规则可以选，一般用 ` 分隔，最后一项后不需要分隔
+
+```
+custom_proxy_group=无需代理`select`[]DIRECT`[]节点选择
+```
 
  ## ruleset 排序原则：
 - 重要直连分流规则 > 去广告规则 > 小分流 > 国内外大分流 > 补充规则
