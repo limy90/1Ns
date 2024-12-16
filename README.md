@@ -1,10 +1,12 @@
 # 打造一个属于自己的clash分流配置
 - [规则参考](https://github.com/lainbo/gists-hub/tree/master/src/Clash/List)
+- [subconverter
+](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
 - [分流配置写法](https://www.songxin.org/2023/01/12/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B-Clash-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%A8%E7%BA%BF%E5%88%86%E6%B5%81%E8%A7%84%E5%88%99%E7%AD%96%E7%95%A5%E7%BB%84/)
 
 
-## 制作分流策略组
+# 制作分流策略组
 命名：文件命名随意，但是一定是英文+以 .ini 结尾
 
 ini 配置文件中：
@@ -17,7 +19,7 @@ ini 配置文件中：
 - 重要直连分流规则 > 去广告规则 > 小分流 > 国内外大分流 > 补充规则
 - 策略组的排序非常重要，因为分流策略组的匹配是按照至上而下收录，匹配到了就停止不再往下
 
-## 进阶配置
+# 进阶配置
 → DIRECT: 直连 
 
 → REJECT: 该规则下不走网络活动，常用于广告拦截
@@ -26,12 +28,11 @@ ini 配置文件中：
 
 → url-test: 表示有该代码下的节点会自动测速 
 
-# 自动归类节点
-→ (港|HK|Hong Kong)
-代表具有"港"，"HK"，"HongKong"关键词的节点会归类到香港节点这个策略组中，
-测速以 http://www.gstatic.com/generate_204`300,,50为准。
+## 自动归类节点
+> (港|HK|Hong Kong)
 
-以下规则说明均摘自 [订阅转换规则](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+代表具有"港"，"HK"，"HongKong"关键词的节点会归类到香港节点这个策略组中
+
 
 ### ruleset
 
