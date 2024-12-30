@@ -1,5 +1,6 @@
 # 打造一个属于自己的clash分流配置
 - [规则参考](https://github.com/lainbo/gists-hub/blob/73b207e3d7cd4c1918efe4f03e0f3739cb4a5cfa/src/Clash/RemoteConfig/Lainbo.ini)
+- [路由规则](https://wiki.metacubex.one/config/rules/)
 - [subconverter
 ](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
