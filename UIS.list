@@ -1,10 +1,6 @@
-#DOMAIN-SUFFIX,trx.sd
-#DOMAIN-SUFFIX,nodeseek.com
-#DOMAIN-SUFFIX,kittyinfra.com
-#DOMAIN-SUFFIX,bestvm.cloud
 DOMAIN-KEYWORD,pikpak
 
-# GoogleVoice
+#GoogleVoice
 DOMAIN,lens.l.google.com
 
 #Google
@@ -15,9 +11,7 @@ DOMAIN-SUFFIX,play.googleapis.com
 DOMAIN,connectivitycheck.gstatic.com
 DOMAIN-SUFFIX,android.clients.google.com
 
-# NAME: Twitter
-# UPDATED: 2024-07-03 16:16:10
-# TOTAL: 32
+#Twitter  2024-07-03 16:16:10  TOTAL: 32
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,periscope.tv
