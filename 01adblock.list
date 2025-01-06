@@ -1,5 +1,5 @@
 # 防止 Telegram 加载转圈
-IP-CIDR,95.161.76.100/31,no-resolve
+# IP-CIDR,95.161.76.100/31,no-resolve
 
 # 内容：防止Adobe系列软件弹盗版
 DOMAIN-SUFFIX,adobe.io
