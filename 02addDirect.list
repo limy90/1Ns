@@ -4,7 +4,7 @@ DOMAIN-SUFFIX,ghxi.com
 DOMAIN-SUFFIX,yxzhi.com
 DOMAIN-SUFFIX,osfipin.com
 DOMAIN-SUFFIX,vps789.com
-DOMAIN-SUFFIX,linux.do
+#DOMAIN-SUFFIX,linux.do
 DOMAIN-KEYWORD,cn
 
 # NAME: DouYin  https://github.com/blackmatrix7/ios_rule_script
