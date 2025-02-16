@@ -33,6 +33,8 @@ custom_proxy_group=无需代理`select`[]DIRECT`[]节点选择
 
 → url-test: 表示有该代码下的节点会自动测速 
 
+→ PROCESS-NAME,Cursor.exe  源进程名
+
 ## 自动归类节点
 > (港|HK|Hong Kong)
 
