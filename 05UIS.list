@@ -4,11 +4,14 @@ DOMAIN-SUFFIX,nezha.tech
 DOMAIN-SUFFIX,bambs.cc
 DOMAIN-SUFFIX,deepseek.com
 
-# Google
+
 # GoogleVoice
 DOMAIN,lens.l.google.com
+
 # 谷歌搜索结果地区判定域名，让谷歌搜索结果为美国结果
 DOMAIN,cse.google.com
+
+# Google
 DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN-SUFFIX,play.googleapis.com
 DOMAIN,connectivitycheck.gstatic.com
