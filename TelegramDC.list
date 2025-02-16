@@ -30,4 +30,6 @@ IP-CIDR6,2001:b28:f23f::/48,no-resolve
 IP-ASN,44907,no-resolve
 IP-ASN,62014,no-resolve
 
-
+# ruleset=🇺🇸 美国自动,[]DOMAIN-SUFFIX,yourls.org
+# ruleset=Telegram,https://raw.githubusercontent.com/lainbo/gists-hub/master/src/Clash/List/TelegramDC1.list
+# ruleset=Telegram,https://raw.githubusercontent.com/lainbo/gists-hub/master/src/Clash/List/TelegramDC5.list
