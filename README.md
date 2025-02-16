@@ -5,7 +5,6 @@
 - [subconverter
 ](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
-- [分流配置写法](https://www.songxin.org/2023/01/12/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B-Clash-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%A8%E7%BA%BF%E5%88%86%E6%B5%81%E8%A7%84%E5%88%99%E7%AD%96%E7%95%A5%E7%BB%84/)
 
 
 # 制作分流策略组
