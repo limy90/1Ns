@@ -5,7 +5,6 @@ DOMAIN-SUFFIX,ipshu.com
 DOMAIN,music.youtube.com
 DOMAIN-KEYWORD,microsoftonline
 
-
 # Google
  DOMAIN-SUFFIX,services.googleapis.cn
  DOMAIN-SUFFIX,play.googleapis.com
