@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,ipshu.com
 DOMAIN-KEYWORD,microsof
 DOMAIN-SUFFIX,outlook.com
 DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,bt.sb
 
 # Google
  DOMAIN-SUFFIX,services.googleapis.cn
