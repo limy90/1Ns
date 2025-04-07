@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,ipshu.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,bt.sb
+PROCESS-NAME,githubdesktop
 
 # Google
 DOMAIN-SUFFIX,services.googleapis.cn
