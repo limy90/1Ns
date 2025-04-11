@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,ipshu.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,bt.sb
 PROCESS-NAME,githubdesktop
+IP-CIDR,191.96.0.0/16
 
 # Google
 DOMAIN-SUFFIX,services.googleapis.cn
