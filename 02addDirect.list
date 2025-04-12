@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,clights.cn
 DOMAIN-KEYWORD,cn
 DOMAIN-SUFFIX,bgp.dns.iepl.com
 IP-ASN,45102
+GEOIP,CN
 
 # NAME: DouYin  https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2024-07-03 16:17:40  DOMAIN: 2  # DOMAIN-SUFFIX: 11 # TOTAL: 13
