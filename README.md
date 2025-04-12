@@ -3,7 +3,7 @@
 - [blackmatrix7大佬规则](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 - [subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
-- [路由规则](https://wiki.metacubex.one/config/rules/)
+- [虚空终端 Docs](https://wiki.metacubex.one/config/rules/)
 
 # 制作分流策略组
 文件命名随意，但是一定是英文+ .ini 结尾
