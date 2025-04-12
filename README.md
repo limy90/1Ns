@@ -4,7 +4,6 @@
 - [subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
 - [路由规则](https://wiki.metacubex.one/config/rules/)
-- [Rules 规则](https://a76yyyy.github.io/clash/zh_CN/configuration/rules.html)
 
 # 制作分流策略组
 文件命名随意，但是一定是英文+ .ini 结尾
