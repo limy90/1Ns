@@ -6,7 +6,7 @@ DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,twitterxz.com
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-KEYWORD,duolingo
-IP-CIDR,191.96.0.0/16
+IP-ASN,397373
 
 # GoogleVoice
 DOMAIN,lens.l.google.com
