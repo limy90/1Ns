@@ -1,14 +1,6 @@
-# NAME: Telegram
-# AUTHOR: blackmatrix7
+
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2024-12-08 02:12:03
-# DOMAIN: 2
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 22
-# IP-ASN: 5
-# IP-CIDR: 4
-# IP-CIDR6: 4
-# PROCESS-NAME: 6
 # TOTAL: 44
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
