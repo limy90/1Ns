@@ -1,0 +1,6 @@
+payload:
+  # 防止 Telegram 加载转圈
+  - IP-CIDR,95.161.76.100/31,no-resolve
+  - DOMAIN-SUFFIX,adobe.io
+  - DOMAIN-KEYWORD,mcdn.bilivideo.cn
+  - DOMAIN-KEYWORD,updates.ghub.logitechg.com
