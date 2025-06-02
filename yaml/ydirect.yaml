@@ -8,3 +8,5 @@ payload:
   - DOMAIN-SUFFIX,clights.cn
   - DOMAIN-KEYWORD,cn
   - DOMAIN-SUFFIX,bgp.dns.iepl.com
+  - DOMAIN-SUFFIX,g.bgp.taphip.com
+  - DOMAIN-SUFFIX,node-2.iepl.my
