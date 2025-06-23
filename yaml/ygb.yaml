@@ -14,3 +14,9 @@ payload:
   - IP-CIDR,88.82.0.0/19
   # CMLinkUK EE
   - IP-CIDR,46.68.0.0/17
+
+# NAME: Instagram
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,instagr.am
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-KEYWORD,instagram
