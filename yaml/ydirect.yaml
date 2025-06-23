@@ -11,6 +11,25 @@ payload:
   - DOMAIN-SUFFIX,g.bgp.taphip.com
   - DOMAIN-SUFFIX,node-2.iepl.my
 
+  # NAME: SteamCN
+  - DOMAIN,csgo.wmsj.cn
+  - DOMAIN,dl.steam.clngaa.com
+  - DOMAIN,dl.steam.ksyna.com
+  - DOMAIN,dota2.wmsj.cn
+  - DOMAIN,st.dl.bscstorage.net
+  - DOMAIN,st.dl.eccdnx.com
+  - DOMAIN,st.dl.pinyuncloud.com
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com
+  - DOMAIN,steampowered.com.8686c.com
+  - DOMAIN,steamstatic.com.8686c.com
+  - DOMAIN,wmsjsteam.com
+  - DOMAIN,xz.pphimalayanrt.com
+  - DOMAIN-SUFFIX,cm.steampowered.com
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steamusercontent.com
+
   # NAME: BaiduCloud
   - IP-CIDR,104.193.88.0/23
   - IP-CIDR,104.193.90.0/24
