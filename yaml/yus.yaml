@@ -5,7 +5,6 @@ payload:
   - DOMAIN-SUFFIX,twitterxz.com
   - DOMAIN-SUFFIX,twimg.com
   - DOMAIN-KEYWORD,duolingo
-  - IP-CIDR,102.165.0.0/16,no-resolve
-  - IP-CIDR,47.79.34.0/24,no-resolve
-  - IP-CIDR,47.242.38.0/24,no-resolve
-  - IP-CIDR,77.111.100.0/24,no-resolve
+  - IP-CIDR,102.165.0.0/16
+  - IP-CIDR,47.79.34.0/24
+  - IP-CIDR,77.111.100.0/24
