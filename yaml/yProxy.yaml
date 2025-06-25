@@ -1,4 +1,6 @@
 payload:
+  - DOMAIN,speed.cloudflare.com
+  
 # NAME: MicrosoftEdge
   - DOMAIN,edge.activity.windows.com
   - DOMAIN,edge.microsoft.com
