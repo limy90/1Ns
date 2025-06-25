@@ -10,6 +10,7 @@ payload:
   - DOMAIN-SUFFIX,bgp.dns.iepl.com
   - DOMAIN-SUFFIX,g.bgp.taphip.com
   - DOMAIN-SUFFIX,node-2.iepl.my
+  - DOMAIN,speed.cloudflare.com
 
 # NAME: Download
   - DOMAIN-SUFFIX,qbittorrent.org
