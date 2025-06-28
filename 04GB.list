@@ -35,3 +35,9 @@ IP-CIDR,46.68.0.0/17
   - DOMAIN-SUFFIX,okex.com
   - DOMAIN-SUFFIX,oklink.com
   - DOMAIN-SUFFIX,okx.com
+
+# NAME: Instagram
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,instagr.am
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-KEYWORD,instagram
