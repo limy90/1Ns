@@ -1,5 +1,6 @@
 payload:
   - DOMAIN,speed.cloudflare.com
+  - DOMAIN-SUFFIX,bambs.cc
   
 # NAME: MicrosoftEdge
   - DOMAIN,edge.activity.windows.com
