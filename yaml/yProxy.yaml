@@ -13,7 +13,8 @@ payload:
   - DOMAIN-SUFFIX,oklink.com
   - DOMAIN-SUFFIX,okx.com
   - DOMAIN-KEYWORD,okx
-
+  - DOMAIN-KEYWORD,okex
+  
 # NAME: Twitter
   - DOMAIN-SUFFIX,ads-twitter.com
   - DOMAIN-SUFFIX,cms-twdigitalassets.com
