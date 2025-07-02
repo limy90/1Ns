@@ -7,13 +7,6 @@ payload:
   - DOMAIN,edge.microsoft.com
   - DOMAIN,iecvlist.microsoft.com
   - DOMAIN,msedge.api.cdp.microsoft.com
-
-# NAME: OKX
-  - DOMAIN-SUFFIX,okex.com
-  - DOMAIN-SUFFIX,oklink.com
-  - DOMAIN-SUFFIX,okx.com
-  - DOMAIN-KEYWORD,okx
-  - DOMAIN-KEYWORD,okex
   
 # NAME: Twitter
   - DOMAIN-SUFFIX,ads-twitter.com
