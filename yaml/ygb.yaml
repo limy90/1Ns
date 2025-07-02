@@ -20,3 +20,10 @@ payload:
   - DOMAIN-SUFFIX,instagr.am
   - DOMAIN-SUFFIX,instagram.com
   - DOMAIN-KEYWORD,instagram
+
+# NAME: OKX
+  - DOMAIN-SUFFIX,okex.com
+  - DOMAIN-SUFFIX,oklink.com
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-KEYWORD,okx
+  - DOMAIN-KEYWORD,okex
