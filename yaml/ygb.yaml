@@ -22,7 +22,7 @@ payload:
   - DOMAIN-KEYWORD,instagram
 
 # 交易所
- - DOMAIN-KEYWORD,ok
+  - DOMAIN-KEYWORD,ok
   - DOMAIN,bybit-exchange.github.io
   - DOMAIN,bybit.ada.support
   - DOMAIN,deribit.cdn.prismic.io
