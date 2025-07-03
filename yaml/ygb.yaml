@@ -22,8 +22,7 @@ payload:
   - DOMAIN-KEYWORD,instagram
 
 # 交易所
-  - r2oaa1-launches.appsflyersdk.com
-  - api.amplitudeexperiment.com
+ - DOMAIN-KEYWORD,ok
   - DOMAIN,bybit-exchange.github.io
   - DOMAIN,bybit.ada.support
   - DOMAIN,deribit.cdn.prismic.io
