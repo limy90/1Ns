@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,g.bgp.taphip.com
   - DOMAIN-SUFFIX,node-2.iepl.my
   - DOMAIN,staticsns.cdn.bcebos.com
+  - DOMAIN-SUFFIX,doubao.com
 
 # NAME: Download
   - DOMAIN-SUFFIX,qbittorrent.org
