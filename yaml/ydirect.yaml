@@ -12,6 +12,7 @@ payload:
   - DOMAIN-SUFFIX,node-2.iepl.my
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN-SUFFIX,doubao.com
+  - DOMAIN-SUFFIX,1688.com
 
 # NAME: Download
   - DOMAIN-SUFFIX,qbittorrent.org
