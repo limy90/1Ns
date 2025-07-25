@@ -1,6 +1,9 @@
 payload:
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,bambs.cc
+  - DOMAIN-SUFFIX,bgp.dns.iepl.com
+  - DOMAIN-SUFFIX,g.bgp.taphip.com
+  - DOMAIN-SUFFIX,node-2.iepl.my
   
 # NAME: MicrosoftEdge
   - DOMAIN,edge.activity.windows.com
