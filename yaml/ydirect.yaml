@@ -7,9 +7,6 @@ payload:
   - DOMAIN-SUFFIX,vps789.com
   - DOMAIN-SUFFIX,clights.cn
   - DOMAIN-KEYWORD,cn
-  - DOMAIN-SUFFIX,bgp.dns.iepl.com
-  - DOMAIN-SUFFIX,g.bgp.taphip.com
-  - DOMAIN-SUFFIX,node-2.iepl.my
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,1688.com
