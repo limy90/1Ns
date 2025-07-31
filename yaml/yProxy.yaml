@@ -4,6 +4,7 @@ payload:
   - DOMAIN-SUFFIX,bgp.dns.iepl.com
   - DOMAIN-SUFFIX,g.bgp.taphip.com
   - DOMAIN-SUFFIX,node-2.iepl.my
+  - IP-CIDR,160.191.0.0/16
   
 # NAME: MicrosoftEdge
   - DOMAIN,edge.activity.windows.com
