@@ -4,6 +4,8 @@
 - [subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
 - [虚空终端 Docs](https://wiki.metacubex.one/config/rules/)
+- https://trends.builtwith.com/websitelist/CDN77<img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
+
 
 # 制作分流策略组
 文件命名随意，但是一定是英文+ .ini 结尾
