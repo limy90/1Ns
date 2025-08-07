@@ -1,6 +1,7 @@
 payload:
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,bambs.cc
+  - DOMAIN-SUFFIX,ws3.in
   - IP-CIDR,160.191.0.0/16
   
 # NAME: MicrosoftEdge
