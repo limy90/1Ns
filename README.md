@@ -4,6 +4,7 @@
 - [subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
 - [虚空终端 Docs](https://wiki.metacubex.one/config/rules/)
+- [海豚测速 - 网络代理工具箱](https://www.haitunt.org/app.html)
 - https://trends.builtwith.com/websitelist/CDN77<img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
 
 
