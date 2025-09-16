@@ -7,7 +7,7 @@ payload:
   - DOMAIN-SUFFIX,vps789.com
   - DOMAIN-SUFFIX,clights.cn
   - DOMAIN-KEYWORD,cn
-  - DOMAIN-KEYWORD,zhihu
+  - DOMAIN-SUFFIX,zhihu.com
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,1688.com
