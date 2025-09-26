@@ -9,7 +9,7 @@
 - <img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
 ### [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
 
-- [[先查ASN](https://tools.ipip.net/as.php)
+- [先查ASN](https://tools.ipip.net/as.php)
 - [再查自己ASN内域名](https://fofa.info)
 ```
 需满足:
