@@ -8,19 +8,17 @@
 - https://trends.builtwith.com/websitelist/CDN77
 - <img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
 ### [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
+
+- [[先查ASN](https://tools.ipip.net/as.php)
+- [再查自己ASN内域名](https://fofa.info)
 ```
-1.套了亚马逊和cf的网站别用  
-
-5.中国境内不依赖任何代理可以直接访问
-
-
-1. [先查ASN](https://tools.ipip.net/as.php)
-1. [再查自己ASN内域名](https://fofa.info)
 需满足:
 使用 TLS 1.3 协议  
 使用 X25519 签名算法  
 支持 HTTP/2 协议（H2)
-
+套了亚马逊和cf的网站别用  
+中国境内不依赖任何代理可以直接访问
+```
 查询条件：
 asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
 （查询自治域为 16509，美国区域，端口为 443，证书不是由 Let's Encrypt 或者 ZeroSSL 颁发的，且请求成功的网站）
