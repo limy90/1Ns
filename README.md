@@ -18,7 +18,7 @@
 套了亚马逊和cf的网站别用  
 中国境内不依赖任何代理可以直接访问
 ```
-### 查询条件
+###  查询条件
 ```
 asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
 ```
