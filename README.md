@@ -7,6 +7,27 @@
 - [海豚测速 - 网络代理工具箱](https://www.haitunt.org/app.html)
 - https://trends.builtwith.com/websitelist/CDN77
 - <img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
+### [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
+```
+reality  
+1.套了亚马逊和cf的网站别用  
+2.使用 TLS 1.3 协议  
+3.使用 X25519 签名算法  
+4.支持 HTTP/2 协议（H2  
+5.中国境内不依赖任何代理可以直接访问
+```
+```
+偷自己ASN内的域名最快。（简称偷邻居）
+1.先查ASN： https://tools.ipip.net/as.php
+2.再查自己ASN内域名：https://fofa.info 满足 TLS 1.3，X25519 ，H2 即可
+如查询条件：
+asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
+（查询自治域为 16509，美国区域，端口为 443，证书不是由 Let's Encrypt 或者 ZeroSSL 颁发的，且请求成功的网站）
+
+还有个方法，搜你VPS所在城市的 大学、图书馆、gov 等等。不要去偷大厂的域名。越小众，越安全。
+
+推荐偷自己，自己 nginx 反代一个网页，然后自己偷自己。。。
+```
 
 
 # 制作分流策略组
@@ -98,26 +119,4 @@ custom_proxy_group=🇯🇵 JP`select`沪日`日本`[]🇯🇵 日本延迟最�
 # 表示创建一个叫 🇯🇵 JP 的 select 策略组,并向其中**依次**添加名字含'沪日','日本'的节点，以及引用上述所创建的 🇯🇵 日本延迟最低 策略组
 custom_proxy_group=节点选择`select`(^(?!.*(美国|日本)).*)
 # 表示创建一个叫 节点选择 的 select 策略组,并向其中**依次**添加名字不包含'美国'或'日本'的节点
-```
-
-### [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
-```
-reality  
-1.套了亚马逊和cf的网站别用  
-2.使用 TLS 1.3 协议  
-3.使用 X25519 签名算法  
-4.支持 HTTP/2 协议（H2  
-5.中国境内不依赖任何代理可以直接访问
-```
-```
-偷自己ASN内的域名最快。（简称偷邻居）
-1.先查ASN： https://tools.ipip.net/as.php
-2.再查自己ASN内域名：https://fofa.info 满足 TLS 1.3，X25519 ，H2 即可
-如查询条件：
-asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
-（查询自治域为 16509，美国区域，端口为 443，证书不是由 Let's Encrypt 或者 ZeroSSL 颁发的，且请求成功的网站）
-
-还有个方法，搜你VPS所在城市的 大学、图书馆、gov 等等。不要去偷大厂的域名。越小众，越安全。
-
-最后，我推荐偷自己，自己 nginx 反代一个网页，然后自己偷自己。。。
 ```
