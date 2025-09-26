@@ -8,8 +8,6 @@
 - [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
 - https://trends.builtwith.com/websitelist/CDN77
 - <img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
-
-
 - [先查ASN](https://tools.ipip.net/as.php)
 - [再查自己ASN内域名](https://fofa.info)
 ```
@@ -25,6 +23,7 @@
 asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
 ```
 （查询自治域为 16509，美国区域，端口为 443，证书不是由 Let's Encrypt 或者 ZeroSSL 颁发的，且请求成功的网站）
+
 
 还有个方法，搜你VPS所在城市的 大学、图书馆、gov 等等。不要去偷大厂的域名。越小众，越安全。
 推荐偷自己，自己 nginx 反代一个网页，然后自己偷自己。。。
