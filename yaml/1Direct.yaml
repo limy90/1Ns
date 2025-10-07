@@ -10,6 +10,7 @@ payload:
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,1688.com
+  - DOMAIN-SUFFIX,jlc.com
 
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com,DIRECT
