@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,1688.com
   - DOMAIN-KEYWORD,jlc
+  - DOMAIN-KEYWORD,sodu
 
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com,DIRECT
