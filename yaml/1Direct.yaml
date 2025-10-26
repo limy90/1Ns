@@ -13,6 +13,7 @@ payload:
   - DOMAIN-KEYWORD,jlc
   - DOMAIN-KEYWORD,sodu
   - DOMAIN-KEYWORD,zhihu
+  - PROCESS-NAME,mstsc.exe
 
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com,DIRECT
