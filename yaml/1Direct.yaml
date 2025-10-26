@@ -16,26 +16,26 @@ payload:
   - PROCESS-NAME,mstsc.exe
 
   # 微信核心服务
-  - DOMAIN-SUFFIX,wechat.com,DIRECT
-  - DOMAIN-SUFFIX,wx.qq.com,DIRECT
-  - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
-  - DOMAIN-SUFFIX,tenpay.com,DIRECT   # 微信支付
+  - DOMAIN-SUFFIX,wechat.com
+  - DOMAIN-SUFFIX,wx.qq.com
+  - DOMAIN-SUFFIX,weixin.qq.com
+  - DOMAIN-SUFFIX,tenpay.com
 # 图片/语音/视频资源
-  - DOMAIN-SUFFIX,qpic.cn,DIRECT
-  - DOMAIN-SUFFIX,qlogo.cn,DIRECT
-  - DOMAIN-SUFFIX,gtimg.cn,DIRECT
-  - DOMAIN-SUFFIX,wx1.sinaimg.cn,DIRECT
-  - DOMAIN-SUFFIX,wx2.sinaimg.cn,DIRECT
-  - DOMAIN-SUFFIX,wx3.sinaimg.cn,DIRECT
-  - DOMAIN-SUFFIX,wx4.sinaimg.cn,DIRECT
+  - DOMAIN-SUFFIX,qpic.cn
+  - DOMAIN-SUFFIX,qlogo.cn
+  - DOMAIN-SUFFIX,gtimg.cn
+  - DOMAIN-SUFFIX,wx1.sinaimg.cn
+  - DOMAIN-SUFFIX,wx2.sinaimg.cn
+  - DOMAIN-SUFFIX,wx3.sinaimg.cn
+  - DOMAIN-SUFFIX,wx4.sinaimg.cn
 # 小程序 & 相关接口
-  - DOMAIN-SUFFIX,servicewechat.com,DIRECT
-  - DOMAIN-SUFFIX,qq.com,DIRECT
-  - DOMAIN-SUFFIX,qqmail.com,DIRECT
+  - DOMAIN-SUFFIX,servicewechat.com
+  - DOMAIN-SUFFIX,qq.com
+  - DOMAIN-SUFFIX,qqmail.com
 # 常见 CDN/存储
-  - DOMAIN-SUFFIX,weixinbridge.com,DIRECT
-  - DOMAIN-SUFFIX,wxapp.tc.qq.com,DIRECT
-  - DOMAIN-SUFFIX,wxapp.tc.qq.net,DIRECT
+  - DOMAIN-SUFFIX,weixinbridge.com
+  - DOMAIN-SUFFIX,wxapp.tc.qq.com
+  - DOMAIN-SUFFIX,wxapp.tc.qq.net
 
 # NAME: Download
   - DOMAIN-SUFFIX,qbittorrent.org
