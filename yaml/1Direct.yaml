@@ -15,6 +15,7 @@ payload:
   - DOMAIN-KEYWORD,zhihu
   - PROCESS-NAME,mstsc.exe
   - PROCESS-NAME,XTerminal.exe
+  - DOMAIN-KEYWORD,raylink
 
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com
