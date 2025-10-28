@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,1688.com
   - DOMAIN-KEYWORD,jlc
+  - DOMAIN,g.iepl.taphip.ru
   - DOMAIN-KEYWORD,sodu
   - DOMAIN-KEYWORD,zhihu
   - PROCESS-NAME,mstsc.exe
