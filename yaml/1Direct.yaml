@@ -15,7 +15,6 @@ payload:
   - DOMAIN,g.iepl.taphip.ru
   - DOMAIN-KEYWORD,sodu
   - DOMAIN-KEYWORD,zhihu
-  - DOMAIN-KEYWORD,thunderbird
   - PROCESS-NAME,mstsc.exe
   - PROCESS-NAME,XTerminal.exe
   - DOMAIN-KEYWORD,raylink
