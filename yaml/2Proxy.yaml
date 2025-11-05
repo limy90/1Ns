@@ -4,6 +4,8 @@ payload:
   - DOMAIN-SUFFIX,nixore.net
   - DOMAIN-KEYWORD,nvidia
   - PROCESS-NAME,WinStore.App.exe
+  - DOMAIN-KEYWORD,thunderbird
+  - PROCESS-NAME,thunderbird.exe
   - IP-CIDR,160.191.0.0/16
   
 # NAME: MicrosoftEdge
