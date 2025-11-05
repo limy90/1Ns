@@ -46,7 +46,6 @@ payload:
 # NAME: Download
   - DOMAIN-SUFFIX,qbittorrent.org
   - DOMAIN-KEYWORD,aria2
-  - DOMAIN-KEYWORD,thunder
   - DOMAIN-KEYWORD,xlliveud
   - DOMAIN-KEYWORD,xunlei
   - DOMAIN-KEYWORD,yunpan
@@ -59,7 +58,6 @@ payload:
   - PROCESS-NAME,Folx.exe
   - PROCESS-NAME,NetTransport
   - PROCESS-NAME,NetTransport.exe
-  - PROCESS-NAME,Thunder
   - PROCESS-NAME,Thunder.exe
   - PROCESS-NAME,Transmission
   - PROCESS-NAME,Transmission.exe
