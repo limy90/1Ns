@@ -1,3 +1,4 @@
+```
 port: 7890
 socks-port: 7891
 unified-delay: true                # 以“完成握手后”的 RTT 统计延迟，更贴近真实体验
@@ -98,3 +99,4 @@ tun:
     - com.android.chrome
   exclude-package:
     - com.android.captiveportallogin
+```
