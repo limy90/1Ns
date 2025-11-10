@@ -2,6 +2,8 @@
 - [blackmatrix7大佬规则](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 - [subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [分流配置写法](https://github.com/chinnsenn/ClashCustomRule?tab=readme-ov-file)
+- [Clash 中 GeoSite 分流的正确使用方式](https://www.aloxaf.com/2025/04/how_to_use_geosite/)
+- [关于 Clash 等现代代理软件的规则和 dns 配置问题](https://linux.do/t/topic/155121)
 - [虚空终端 Docs](https://wiki.metacubex.one/config/rules/)
 - [海豚测速 - 网络代理工具箱](https://www.haitunt.org/app.html)
 -  [间歇性无法翻墙](https://kerrynotes.com/clash-is-not-working/)
