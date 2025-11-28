@@ -3,7 +3,7 @@ payload:
   - DOMAIN-SUFFIX,bambs.cc
   - DOMAIN-SUFFIX,nixore.net
   - DOMAIN-KEYWORD,nvidia
-  - PROCESS-NAME,WinStore.App.exe
+    - DOMAIN-KEYWORD,apkpure
   - DOMAIN-KEYWORD,thunderbird
   - PROCESS-NAME,thunderbird.exe
   - IP-CIDR,160.191.0.0/16
