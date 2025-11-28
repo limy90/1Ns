@@ -3,13 +3,12 @@ payload:
   - DOMAIN-SUFFIX,bambs.cc
   - DOMAIN-SUFFIX,nixore.net
   - DOMAIN-KEYWORD,nvidia
-    - DOMAIN-KEYWORD,apkpure
   - DOMAIN-KEYWORD,thunderbird
   - PROCESS-NAME,thunderbird.exe
   - IP-CIDR,160.191.0.0/16
-  
-# NAME: MicrosoftEdge
-  - DOMAIN,edge.activity.windows.com
-  - DOMAIN,edge.microsoft.com
-  - DOMAIN,iecvlist.microsoft.com
-  - DOMAIN,msedge.api.cdp.microsoft.com
+
+# NAME: apkpure
+  - DOMAIN-SUFFIX,apkpure.com
+  - DOMAIN-SUFFIX,cdnpure.com
+  - DOMAIN-SUFFIX,pureapk.com
+  - DOMAIN-SUFFIX,winudf.com
