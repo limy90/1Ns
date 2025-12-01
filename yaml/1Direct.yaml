@@ -20,6 +20,7 @@ payload:
   - DOMAIN-KEYWORD,raylink
   - PROCESS-NAME,RayLink.exe
   - PROCESS-NAME,RayLinkService.exe
+  - DOMAIN-SUFFIX,jsdelivr.net
 
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com
