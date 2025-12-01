@@ -292,6 +292,9 @@ rules:
 
   - RULE-SET,0Block,广告拦截,no-resolve
   - RULE-SET,Block,广告拦截,no-resolve
+  - GEOSITE,cloudflare-cn,HIK
+  - GEOSITE,hcaptcha,HIK
+  - DOMAIN-KEYWORD,challenges,HIK
 
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Paypal,GIB
@@ -317,7 +320,7 @@ rules:
 
   - RULE-SET,Google,节点选择
   - RULE-SET,Microsoft,节点选择
-  - RULE-SET,Cloudflare,节点选择
+  - RULE-SET,Cloudflare,HIK
 
   - RULE-SET,Proxy,节点选择 
 
