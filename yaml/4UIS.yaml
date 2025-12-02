@@ -3,6 +3,7 @@ payload:
   - DOMAIN-SUFFIX,twitterxz.com
   - DOMAIN-SUFFIX,twimg.com
   - DOMAIN-SUFFIX,hostdzire.com
+  - DOMAIN-SUFFIX,sis001.com
   - DOMAIN-KEYWORD,apkpure
   - IP-CIDR,102.165.0.0/16
   - IP-CIDR,47.79.34.0/24
