@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN-SUFFIX,828999.xyz
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,bambs.cc
   - DOMAIN-SUFFIX,ippure.com
