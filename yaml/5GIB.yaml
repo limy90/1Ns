@@ -1,7 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,nodeseek.com
   - DOMAIN-SUFFIX,deepflood.com
-  - DOMAIN-SUFFIX,cool18.com
   # Giffgaff
   - IP-CIDR,87.194.0.0/16
   - DOMAIN-KEYWORD,giffgaff
