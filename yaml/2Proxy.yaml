@@ -3,7 +3,6 @@ payload:
   - DOMAIN-SUFFIX,cool18.com
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,bambs.cc
-  - DOMAIN-SUFFIX,ippure.com
   - DOMAIN-SUFFIX,nixore.net
   - DOMAIN-KEYWORD,nvidia
   - DOMAIN-KEYWORD,thunderbird
