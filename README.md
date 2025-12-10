@@ -18,10 +18,10 @@
 使用 TLS 1.3 协议  
 使用 X25519 签名算法  
 支持 HTTP/2 协议（H2)
-套了亚马逊和cf的网站别用  
+套了亚马逊 CF fastly网站别用  
 中国境内不依赖任何代理可以直接访问
 ```
-###  查询条件
+###  [查询条件](https://fofa.info/)
 ```
 asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
 ```
@@ -30,23 +30,6 @@ asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.is
 
 还有个方法，搜你VPS所在城市的 大学、图书馆、gov 等等。不要去偷大厂的域名。越小众，越安全。
 推荐偷自己，自己 nginx 反代一个网页，然后自己偷自己。。。
-
-```
-{ target: 'www.icloud.com:443', sni: 'www.icloud.com,icloud.com' },
-{ target: 'www.apple.com:443', sni: 'www.apple.com,apple.com' },
-{ target: 'www.tesla.com:443', sni: 'www.tesla.com,tesla.com' },
-{ target: 'www.sony.com:443', sni: 'www.sony.com,sony.com' },
-{ target: 'www.nvidia.com:443', sni: 'www.nvidia.com,nvidia.com' },
-{ target: 'www.amd.com:443', sni: 'www.amd.com,amd.com' },
-{ target: 'azure.microsoft.com:443', sni: 'azure.microsoft.com,www.azure.com' },
-{ target: 'aws.amazon.com:443', sni: 'aws.amazon.com,amazon.com' },
-{ target: 'www.bing.com:443', sni: 'www.bing.com,bing.com' },
-{ target: 'www.oracle.com:443', sni: 'www.oracle.com,oracle.com' },
-{ target: 'www.intel.com:443', sni: 'www.intel.com,intel.com' },
-{ target: 'www.microsoft.com:443', sni: 'www.microsoft.com,microsoft.com' },
-{ target: 'www.amazon.com:443', sni: 'www.amazon.com,amazon.com' }
-```
-
 
 
 # 制作分流策略组
