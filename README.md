@@ -22,6 +22,12 @@
 套了亚马逊 CF fastly网站别用  
 中国境内不依赖任何代理可以直接访问
 ```
+控制台输入，返回值应为 h2
+```
+window.chrome.loadTimes()?.npnNegotiatedProtocol
+
+```
+
 ###  [查询条件](https://fofa.info/)
 ```
 asn=="16509" && country=="US" && port=="443" && cert!="Let's Encrypt" && cert.issuer!="ZeroSSL" && status_code="200"
