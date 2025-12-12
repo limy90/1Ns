@@ -1,5 +1,3 @@
-### nameserver（国外）proxy-nameserver（国内）direct-nameserver（国内）
-
 - [规则参考](https://github.com/lainbo/gists-hub/blob/73b207e3d7cd4c1918efe4f03e0f3739cb4a5cfa/src/Clash/RemoteConfig/Lainbo.ini)
 - [blackmatrix7大佬规则](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)
 - [subconverter](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
