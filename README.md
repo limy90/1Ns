@@ -6,7 +6,6 @@
 - [关于 Clash 等现代代理软件的规则和 dns 配置问题](https://linux.do/t/topic/155121)
 - [虚空终端 Docs](https://wiki.metacubex.one/config/rules/)
 - [海豚测速 - 网络代理工具箱](https://www.haitunt.org/app.html)
--  [间歇性无法翻墙](https://kerrynotes.com/clash-is-not-working/)
 - [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
 
 # 制作分流策略组
