@@ -10,8 +10,6 @@
 - [海豚测速 - 网络代理工具箱](https://www.haitunt.org/app.html)
 -  [间歇性无法翻墙](https://kerrynotes.com/clash-is-not-working/)
 - [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
-- https://trends.builtwith.com/websitelist/CDN77
-- <img width="520" height="78" alt="image" src="https://github.com/user-attachments/assets/83e4d8e6-8413-4ae1-9712-420b1111a0ab" />
 
 # 制作分流策略组
 文件命名随意，但是一定是英文+ .ini 结尾
