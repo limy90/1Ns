@@ -21,6 +21,8 @@ payload:
   - PROCESS-NAME,RayLink.exe
   - PROCESS-NAME,RayLinkService.exe
   - DOMAIN-SUFFIX,jsdelivr.net
+  - IP-CIDR,190.92.222.222/32
+
 
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com
