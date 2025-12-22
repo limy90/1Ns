@@ -21,7 +21,7 @@ payload:
   - PROCESS-NAME,RayLink.exe
   - PROCESS-NAME,RayLinkService.exe
   - DOMAIN-SUFFIX,jsdelivr.net
-  - IP-CIDR,190.92.222.222/32,no-resolve
+  - IP-CIDR,190.92.230.222/32,no-resolve
 
 
   # 微信核心服务
