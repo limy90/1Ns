@@ -6,7 +6,7 @@ payload:
   - DOMAIN-SUFFIX,sis001.com
   - DOMAIN-KEYWORD,apkpure
   - DOMAIN-SUFFIX,haijiao.com
-  - DOMAIN-SUFFIX,bt.sb
+
 # AI
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalicore-pa.clients6.google.com
