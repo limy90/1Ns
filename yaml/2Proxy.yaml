@@ -1,8 +1,6 @@
 payload:
   - DOMAIN-KEYWORD,warframe
   - DOMAIN-KEYWORD,thunderbird
-  - DOMAIN-SUFFIX,idcflare.com
-  - DOMAIN-SUFFIX,linux.do
   - DOMAIN-SUFFIX,828999.xyz
   - DOMAIN-SUFFIX,cool18.com
   - DOMAIN,speed.cloudflare.com
