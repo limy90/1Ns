@@ -16,8 +16,6 @@ payload:
   - PROCESS-NAME,RayLink.exe
   - PROCESS-NAME,RayLinkService.exe
   - IP-CIDR,190.92.230.222/32,no-resolve
-  - DOMAIN,api-drive.mypikpak.com
-  - DOMAIN-KEYWORD,dl-a10b-
   
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com
