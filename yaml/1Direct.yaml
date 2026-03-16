@@ -1,8 +1,6 @@
 payload:
   - DOMAIN-KEYWORD,cn
   - DOMAIN-SUFFIX,zdq.life
-  - DOMAIN-SUFFIX,trx.sd
-  - DOMAIN-SUFFIX,fttrr.com
   - DOMAIN-SUFFIX,dooki.cloud
   - DOMAIN-SUFFIX,pc528.net
   - DOMAIN-SUFFIX,ghxi.com
@@ -11,18 +9,16 @@ payload:
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,1688.com
-  - DOMAIN-KEYWORD,jlc
-  - DOMAIN,g.iepl.taphip.ru
-  - DOMAIN-KEYWORD,sodu
   - DOMAIN-KEYWORD,zhihu
   - PROCESS-NAME,mstsc.exe
   - PROCESS-NAME,XTerminal.exe
   - DOMAIN-KEYWORD,raylink
   - PROCESS-NAME,RayLink.exe
   - PROCESS-NAME,RayLinkService.exe
-  - DOMAIN-SUFFIX,jsdelivr.net
   - IP-CIDR,190.92.230.222/32,no-resolve
-
+  - DOMAIN,api-drive.mypikpak.com
+  - DOMAIN-KEYWORD,dl-a10b-
+  
   # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com
   - DOMAIN-SUFFIX,wx.qq.com
