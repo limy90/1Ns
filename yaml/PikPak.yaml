@@ -1,10 +1,12 @@
 payload:
   - PROCESS-NAME,Pikpak.exe
+  - DOMAIN-KEYWORD,pikpak
+  - DOMAIN-SUFFIX,pickpackapp.com
+  - DOMAIN-SUFFIX,pikpakdrive.com
   - DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
   - DOMAIN-SUFFIX,hub5idx.v6.shub.sandai.net
   - DOMAIN-SUFFIX,hub5pn.wap.sandai.net
   - DOMAIN-SUFFIX,hub5pnc.sandai.net
   - DOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net
   - DOMAIN-SUFFIX,hubciddata.sandai.net
-  - DOMAIN-KEYWORD,mypikpak
-  - DOMAIN-SUFFIX,pickpackapp.com
+  - DOMAIN,o4504926511693824.ingest.sentry.io
