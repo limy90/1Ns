@@ -6,7 +6,7 @@ payload:
   - DOMAIN-SUFFIX,laowang.vip
   - DOMAIN-SUFFIX,linux.do
   - DOMAIN-SUFFIX,idcflare.com
-
+  - DOMAIN-SUFFIX,trxg.de
 # AI
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalicore-pa.clients6.google.com
