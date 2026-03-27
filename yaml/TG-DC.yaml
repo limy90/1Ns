@@ -1,5 +1,10 @@
 payload:
   - PROCESS-NAME,Telegram.exe
+  - DOMAIN-KEYWORD,telegram
+  - DOMAIN-SUFFIX,t.me
+  - DOMAIN-SUFFIX,tdesktop.com
+  - DOMAIN-SUFFIX,telegram.me
+  - DOMAIN-SUFFIX,telegram.org
   - PROCESS-NAME,nekox.messenger
   - PROCESS-NAME,org.telegram.messenger
   - PROCESS-NAME,telegram-desktop
@@ -16,14 +21,10 @@ payload:
   - DOMAIN-SUFFIX,mbrx.app
   - DOMAIN-SUFFIX,quiz.directory
   - DOMAIN-SUFFIX,stel.com
-  - DOMAIN-SUFFIX,t.me
-  - DOMAIN-SUFFIX,tdesktop.com
   - DOMAIN-SUFFIX,telega.one
   - DOMAIN-SUFFIX,telegra.ph
   - DOMAIN-SUFFIX,telegram-cdn.org
   - DOMAIN-SUFFIX,telegram.dog
-  - DOMAIN-SUFFIX,telegram.me
-  - DOMAIN-SUFFIX,telegram.org
   - DOMAIN-SUFFIX,telegram.space
   - DOMAIN-SUFFIX,telegramdownload.com
   - DOMAIN-SUFFIX,telesco.pe
