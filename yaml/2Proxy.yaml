@@ -9,3 +9,6 @@ payload:
   - DOMAIN-KEYWORD,thunderbird
   - PROCESS-NAME,thunderbird.exe
   - DOMAIN-SUFFIX,bt.sb
+  - GEOSITE,cloudflare-cn
+  - GEOSITE,hcaptcha
+  - DOMAIN-KEYWORD,challenges
