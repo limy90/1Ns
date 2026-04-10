@@ -1,5 +1,5 @@
-#手动节点（可选）（链式代理必须使用此方式）
 #Win+R → gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
+#手动节点（可选）（链式代理必须使用此方式）
 proxies:
 
 # 把 url 替换成你的 Clash 订阅链接，不用的订阅保持不变即可
@@ -8,7 +8,7 @@ proxy-providers:
   订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
 
-#include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
+#include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3] 包含订阅节点，domain-strategy: ipv4-only 强制仅使用 IPv4
 proxy-groups:
   - name: 节点选择
     type: select
@@ -91,6 +91,7 @@ dns:
   proxy-server-nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+
 profile:
   store-selected: true
   store-fake-ip: false
