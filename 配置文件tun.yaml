@@ -32,7 +32,7 @@ proxy-groups:
     proxies:
       - 节点选择
     include-all-proxies: true
-    filter: "UK"
+    filter: "(?i)UK|GB"
     use: [订阅1, 订阅2, 订阅3]
   - name: UIS
     type: select
@@ -40,7 +40,7 @@ proxy-groups:
       - 节点选择
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    filter: "Mega"
+    filter: "(?i)me|US"
   - name: 容错规则
     type: select
     proxies: [节点选择]
