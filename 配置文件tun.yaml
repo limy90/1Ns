@@ -1,5 +1,5 @@
-gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
 #手动节点（可选）（链式代理必须使用此方式）
+#Win+R → gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
 proxies:
 
 # 把 url 替换成你的 Clash 订阅链接，不用的订阅保持不变即可
@@ -8,7 +8,7 @@ proxy-providers:
   订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
 
-#include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3] 包含订阅节点，domain-strategy: ipv4-only 强制仅使用 IPv4
+#include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
 proxy-groups:
   - name: 节点选择
     type: select
@@ -32,7 +32,7 @@ proxy-groups:
     proxies:
       - 节点选择
     include-all-proxies: true
-    filter: "(?i)UK|GB"
+    filter: "UK"
     use: [订阅1, 订阅2, 订阅3]
   - name: UIS
     type: select
@@ -40,7 +40,7 @@ proxy-groups:
       - 节点选择
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    filter: "(?i)me|US"
+    filter: "Mega"
   - name: 容错规则
     type: select
     proxies: [节点选择]
@@ -71,27 +71,19 @@ dns:
   fake-ip-filter:
     - 'rule-set:fake-ip-filter'
 
-#基础DNS服务器，必须先有它才能使用域名类型的DNS配置，因此必须为IP
   default-nameserver:
     - tls://223.5.5.5
     - tls://223.6.6.6
     - https://223.5.5.5/dns-query
-
-#规则匹配到直连时使用的DNS，既然是可以直连的，当然要用国内DNS
   direct-nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query	
-    
-#在访问的国外网站没有匹配到任何域名规则，最终走了MATCH兜底规则时使用的DNS，为了确保不发生DNS泄漏和DNS污染，必须使用国外DNS
   nameserver:
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query	
-
-#解析代理节点时使用的DNS，为了使respect-rules生效必须设置，最好设置为国内DNS，否则在代理的第一步就可能因为连接不上国外DNS而解析不出代理节点的IP，最终倒在起点    
   proxy-server-nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-
 profile:
   store-selected: true
   store-fake-ip: false
@@ -300,23 +292,23 @@ rules:
   - GEOIP,CN,无需代理
   - RULE-SET,1Direct,无需代理
   - RULE-SET,2Proxy,节点选择 
-  
+
   - RULE-SET,0Block,广告拦截,no-resolve
   - RULE-SET,Block,广告拦截,no-resolve
+
+  - RULE-SET,Pikpak,流媒体 
+  - RULE-SET,YouTube,流媒体
+  - DOMAIN,music.youtube.com,流媒体
 
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Paypal,GIB
   
   - RULE-SET,Direct2,无需代理
   - RULE-SET,Direct3,无需代理
- 
-  - RULE-SET,YouTube,流媒体
-  - DOMAIN,music.youtube.com,流媒体
-  - RULE-SET,Pikpak,流媒体  
- 
+
+  - RULE-SET,GIB,GIB  
   - RULE-SET,Facebook,GIB
   - RULE-SET,Whatsapp,GIB
-  - RULE-SET,GIB,GIB
 
   - RULE-SET,UIS,UIS
   - RULE-SET,Github,UIS
@@ -325,7 +317,9 @@ rules:
   - RULE-SET,Google,节点选择
   - RULE-SET,Microsoft,节点选择
   - RULE-SET,Cloudflare,节点选择
-
+  - GEOSITE,cloudflare-cn,节点选择
+  - GEOSITE,hcaptcha,节点选择
+  - DOMAIN-KEYWORD,challenges,节点选择
   - RULE-SET,Proxy,节点选择 
 
   - MATCH,节点选择
