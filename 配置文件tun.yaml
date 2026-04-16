@@ -1,5 +1,5 @@
-#Win+R → gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
 #手动节点（可选）（链式代理必须使用此方式）
+#Win+R → gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
 proxies:
 
 # 把 url 替换成你的 Clash 订阅链接，不用的订阅保持不变即可
@@ -287,6 +287,13 @@ rule-providers:
     path: ./ruleset/YouTube.yaml
     interval: 8640000
 
+  Twitch:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitch/Twitch.yaml"
+    path: ./ruleset/Twitch.yaml
+    interval: 8640000
+
 rules:
   - GEOIP,LAN,无需代理
   - GEOIP,CN,无需代理
@@ -311,6 +318,7 @@ rules:
   - RULE-SET,Whatsapp,GIB
 
   - RULE-SET,UIS,UIS
+  - RULE-SET,Twitch,UIS
   - RULE-SET,Github,UIS
   - RULE-SET,Twitter,UIS
 
