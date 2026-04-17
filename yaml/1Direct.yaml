@@ -19,11 +19,13 @@ payload:
   - PROCESS-NAME,RayLinkService.exe
   - IP-CIDR,190.92.230.222/32,no-resolve
   
-  # 微信核心服务
   - DOMAIN-SUFFIX,wechat.com
   - DOMAIN-SUFFIX,wx.qq.com
   - DOMAIN-SUFFIX,weixin.qq.com
   - DOMAIN-SUFFIX,tenpay.com
+  - PROCESS-NAME,WeChat.exe
+  - PROCESS-NAME,Weixin.exe
+  - PROCESS-NAME,WeChatAppEx.exe
 # 图片/语音/视频资源
   - DOMAIN-SUFFIX,qpic.cn
   - DOMAIN-SUFFIX,qlogo.cn
