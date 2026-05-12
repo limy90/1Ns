@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,haijiao.com
   - DOMAIN-SUFFIX,laowang.vip
   - DOMAIN-SUFFIX,trxg.de
+  - DOMAIN-SUFFIX,cool18.com
 # AI
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalicore-pa.clients6.google.com
