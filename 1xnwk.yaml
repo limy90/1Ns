@@ -1,11 +1,10 @@
-#手动节点（可选）（链式代理必须使用此方式）
-#Win+R → gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
+#手动节点（可选）（链式代理必须使用此方式）Win+R → gpedit.msc → 计算机配置-管理模板 → 网络 → DNS客户端 → 禁用智能多宿主名称解析 → 已启用 → 应用
 proxies:
 
 # 把 url 替换成你的 Clash 订阅链接，不用的订阅保持不变即可
 proxy-providers:
   订阅1: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub1.yaml, interval: 86400}
-  订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
+  订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2.yaml, interval: 86400}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
 
 #include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
@@ -40,7 +39,7 @@ proxy-groups:
       - 节点选择
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    filter: "Mega"
+    filter: "Mega|美国"
   - name: 容错规则
     type: select
     proxies: [节点选择]
@@ -99,10 +98,10 @@ geo-auto-update: true
 geodata-loader: standard
 geo-update-interval: 24
 geox-url:
-  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
-  geosite: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
-  asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb	  
+  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb
+  asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb  
 tun:
   enable: true
   stack: mixed
@@ -196,48 +195,6 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
     path: ./ruleset/fake_ip_filter.list
 
-  Block:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Advertising/Advertising_Classical.yaml"
-    path: ./ruleset/reject.yaml
-    interval: 8640000
-
-  Direct2:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/China/China_Classical.yaml"
-    path: ./ruleset/Direct2.yaml
-    interval: 8640000
-
-  Direct3:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Direct/Direct.yaml"
-    path: ./ruleset/Direct3.yaml
-    interval: 8640000
-
-  Proxy:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Proxy/Proxy_Classical.yaml"
-    path: ./ruleset/Proxy.yaml
-    interval: 8640000
-
-  Twitter:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml"
-    path: ./ruleset/x.yaml
-    interval: 8640000
-
-  Facebook:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Facebook/Facebook.yaml"
-    path: ./ruleset/facebook.yaml
-    interval: 8640000
-
   Whatsapp:
     type: http
     behavior: classical
@@ -252,20 +209,6 @@ rule-providers:
     path: ./ruleset/github.yaml
     interval: 8640000
 
-  Paypal:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.yaml"
-    path: ./ruleset/paypal.yaml
-    interval: 8640000
-
-  Google:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/YGO.yaml"
-    path: ./ruleset/Google.yaml
-    interval: 8640000
-
   Cloudflare:
     type: http
     behavior: classical
@@ -273,62 +216,45 @@ rule-providers:
     path: ./ruleset/cloudflare.yaml
     interval: 8640000
 
-  Microsoft:
+  AI:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/LM-Firefly/Rules/refs/heads/master/Clash-RuleSet-Classical/Microsoft.yaml"
-    path: ./ruleset/Microsoft.yaml
-    interval: 8640000
-
-  YouTube:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.yaml"
-    path: ./ruleset/YouTube.yaml
-    interval: 8640000
-
-  Twitch:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitch/Twitch.yaml"
-    path: ./ruleset/Twitch.yaml
+    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/A1.yaml"
+    path: ./ruleset/AI.yaml
     interval: 8640000
 
 rules:
   - GEOIP,LAN,无需代理
-  - GEOIP,CN,无需代理
   - RULE-SET,1Direct,无需代理
-  - RULE-SET,2Proxy,节点选择 
-
+  - RULE-SET,2Proxy,节点选择
+  - GEOSITE,google-cn,无需代理
   - RULE-SET,0Block,广告拦截,no-resolve
-  - RULE-SET,Block,广告拦截,no-resolve
-
-  - RULE-SET,Pikpak,流媒体 
-  - RULE-SET,YouTube,流媒体
-  - DOMAIN,music.youtube.com,流媒体
+  - RULE-SET,category-ads-all,广告拦截,no-resolve
 
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Paypal,GIB
-  
-  - RULE-SET,Direct2,无需代理
-  - RULE-SET,Direct3,无需代理
 
-  - RULE-SET,GIB,GIB  
-  - RULE-SET,Facebook,GIB
+  - GEOSITE,twitch,流媒体
+  - GEOSITE,youtube,流媒体
+  - RULE-SET,Pikpak,流媒体
+
+  - RULE-SET,GIB,GIB
   - RULE-SET,Whatsapp,GIB
+  - GEOSITE,meta,GIB
+  - GEOSITE,paypal,GIB
 
+  - GEOSITE,x,UIS
+  - RULE-SET,AI,UIS
   - RULE-SET,UIS,UIS
-  - RULE-SET,Twitch,UIS
   - RULE-SET,Github,UIS
-  - RULE-SET,Twitter,UIS
 
-  - RULE-SET,Google,节点选择
-  - RULE-SET,Microsoft,节点选择
-  - RULE-SET,Cloudflare,节点选择
-  - GEOSITE,cloudflare-cn,节点选择
   - GEOSITE,hcaptcha,节点选择
   - DOMAIN-KEYWORD,challenges,节点选择
-  - RULE-SET,Proxy,节点选择 
+  - RULE-SET,Cloudflare,节点选择
+  - GEOSITE,cloudflare-cn,节点选择
+  - GEOSITE,google,节点选择
+  - GEOSITE,microsoft,节点选择
 
+  - GEOIP,CN,无需代理,no-resolve
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT     #禁用QUIC
+  # - NETWORK,UDP,REJECT  #拒绝所有剩余 UDP
   - MATCH,节点选择
-  - NETWORK,udp,REJECT
