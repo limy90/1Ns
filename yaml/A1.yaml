@@ -89,7 +89,7 @@ payload:
   - DOMAIN-SUFFIX,live.com
   - DOMAIN-SUFFIX,virtualearth.net
   - DOMAIN-SUFFIX,windows.net
-  - DOMAIN-SUFFIX,onenote
+  - DOMAIN-SUFFIX,onenote.com
   - DOMAIN-SUFFIX,hexun.com
   - DOMAIN-SUFFIX,dict.bing.com.cn
   - DOMAIN-SUFFIX,msn.com
