@@ -208,14 +208,7 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.yaml"
     path: ./ruleset/github.yaml
     interval: 8640000
-
-  Cloudflare:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Cloudflare/Cloudflare.yaml"
-    path: ./ruleset/cloudflare.yaml
-    interval: 8640000
-
+    
   AI:
     type: http
     behavior: classical
@@ -229,7 +222,7 @@ rules:
   - RULE-SET,2Proxy,节点选择
   - GEOSITE,google-cn,无需代理
   - RULE-SET,0Block,广告拦截,no-resolve
-  - RULE-SET,category-ads-all,广告拦截,no-resolve
+  - GEOSITE,category-ads-all,广告拦截
 
   - RULE-SET,Telegram,Telegram
 
@@ -249,12 +242,13 @@ rules:
 
   - GEOSITE,hcaptcha,节点选择
   - DOMAIN-KEYWORD,challenges,节点选择
-  - RULE-SET,Cloudflare,节点选择
-  - GEOSITE,cloudflare-cn,节点选择
+  - GEOSITE,cloudflare,节点选择
   - GEOSITE,google,节点选择
   - GEOSITE,microsoft,节点选择
 
-  - GEOIP,CN,无需代理,no-resolve
+  - GEOSITE,cn,无需代理
+  - GEOSITE,steam@cn,无需代理
+  - GEOIP,cn,无需代理,no-resolve
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT     #禁用QUIC
   # - NETWORK,UDP,REJECT  #拒绝所有剩余 UDP
   - MATCH,节点选择
