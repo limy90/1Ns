@@ -2,7 +2,7 @@ payload:
   # 3rd part AI router
   - DOMAIN-SUFFIX,cerebras.ai
 
-  # 内容：OpenAi,claude,recraft,poe,bing,gemini,perplexity
+  # OpenAI / ChatGPT
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,chatgpt
   - DOMAIN-KEYWORD,datadoghq
@@ -25,7 +25,7 @@ payload:
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com
   - DOMAIN-SUFFIX,ab.chatgpt.com
 
-  # claude
+  # Claude
   - DOMAIN-KEYWORD,anthropic
   - PROCESS-NAME,Claude
   - PROCESS-NAME,Claude Helper
@@ -38,26 +38,26 @@ payload:
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,claudeusercontent.com
 
-  # recraft
+  # Recraft
   - DOMAIN-SUFFIX,recraft.ai
 
-  # poe
+  # Poe
   - DOMAIN-SUFFIX,poe.com
 
-  # aitools
+  # AI tools
   - PROCESS-NAME,LM Studio
   - DOMAIN-SUFFIX,lmstudio.ai
 
-  # grok
+  # Grok
   - PROCESS-NAME,grok
   - DOMAIN-KEYWORD,grok
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
 
-  # perplexity.ai
+  # Perplexity
   - DOMAIN-SUFFIX,perplexity.ai
 
-  # VS CODE AI chat
+  # VS Code AI chat / GitHub Copilot
   - PROCESS-NAME,Code Helper
   - PROCESS-NAME,Code Helper (Plugin)
   - DOMAIN-SUFFIX,githubcopilot.com
@@ -67,7 +67,7 @@ payload:
   - DOMAIN-SUFFIX,github.gallerycdn.vsassets.io
   - DOMAIN-SUFFIX,applicationinsights.azure.com
 
-  # bing chat
+  # Bing Chat / Microsoft Copilot
   - DOMAIN-KEYWORD,bing
   - DOMAIN-KEYWORD,copilot
   - DOMAIN-KEYWORD,edgeassetservice
@@ -87,7 +87,6 @@ payload:
   - DOMAIN-SUFFIX,designerapp.officeapps.live.com
   - DOMAIN-SUFFIX,cdn.designerapp.osi.office.net
   - DOMAIN-SUFFIX,live.com
-  - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,virtualearth.net
   - DOMAIN-SUFFIX,windows.net
   - DOMAIN-SUFFIX,onenote
@@ -95,7 +94,6 @@ payload:
   - DOMAIN-SUFFIX,dict.bing.com.cn
   - DOMAIN-SUFFIX,msn.com
   - DOMAIN-SUFFIX,variflight.com
-  - DOMAIN-SUFFIX,bing.net
   - DOMAIN-SUFFIX,msftoffers.com
   - DOMAIN-SUFFIX,chinacloudapp.cn
   - DOMAIN-SUFFIX,cbsnews.com
@@ -147,9 +145,6 @@ payload:
   - DOMAIN-SUFFIX,akamproxync.staging-bing-int.com
   - DOMAIN-SUFFIX,akamproxysc.staging-bing-int.com
   - DOMAIN-SUFFIX,akamproxywest.staging-bing-int.com
-  - DOMAIN-SUFFIX,cjfdbemmaeeohgibnhdhlakiahifjjcf
-  - DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com
-  - DOMAIN-SUFFIX,bngpiglbalmenaabohcooocpnljgfemj
   - DOMAIN-SUFFIX,rwww.bing.com
 
   # Google Gemini
