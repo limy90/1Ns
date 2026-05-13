@@ -46,7 +46,7 @@ payload:
 
   # aitools
   - PROCESS-NAME,LM Studio
-  - DOMAIN-SUFFIX,lmsudio.ai
+  - DOMAIN-SUFFIX,lmstudio.ai
 
   # grok
   - PROCESS-NAME,grok
