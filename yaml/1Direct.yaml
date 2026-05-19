@@ -18,6 +18,7 @@ payload:
   - PROCESS-NAME,RayLink.exe
   - PROCESS-NAME,RayLinkService.exe
   - IP-CIDR,190.92.230.222/32,no-resolve
+  - PROCESS-NAME,ugraf.exe
   
   - DOMAIN-SUFFIX,wechat.com
   - DOMAIN-SUFFIX,wx.qq.com
