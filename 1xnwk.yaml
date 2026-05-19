@@ -14,13 +14,20 @@ proxy-groups:
     proxies:
       - DIRECT
     include-all-proxies: true
-    exclude-filter: "DIRECT|MP"
     use: [订阅1, 订阅2, 订阅3]
+    exclude-filter: "DIRECT|MP"
   - name: Telegram
     type: select
     proxies:
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
+  - name: 中转
+    type: select
+    proxies:
+      - DIRECT
+    include-all-proxies: true
+    use: [订阅2]
+    exclude-filter: "中|MP"
   - name: 流媒体
     type: select
     proxies:
@@ -219,6 +226,7 @@ rules:
   - GEOIP,LAN,无需代理
   - RULE-SET,1Direct,无需代理
   - RULE-SET,2Proxy,节点选择
+  - GEOSITE,googlefcm,无需代理
   - GEOSITE,google-cn,无需代理
   - RULE-SET,0Block,广告拦截,no-resolve
   - GEOSITE,category-ads-all,广告拦截
@@ -233,14 +241,13 @@ rules:
   - RULE-SET,Whatsapp,GIB
   - GEOSITE,meta,GIB
   - GEOSITE,paypal,GIB
+  - GEOSITE,tiktok,GIB
 
   - GEOSITE,x,UIS
   - RULE-SET,AI,UIS
   - RULE-SET,UIS,UIS
   - RULE-SET,Github,UIS
 
-  - GEOSITE,hcaptcha,节点选择
-  - DOMAIN-KEYWORD,challenges,节点选择
   - GEOSITE,cloudflare,节点选择
   - GEOSITE,google,节点选择
   - GEOSITE,microsoft,节点选择
