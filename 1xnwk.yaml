@@ -4,7 +4,7 @@ proxies:
 # 把 url 替换成你的 Clash 订阅链接，不用的订阅保持不变即可
 proxy-providers:
   订阅1: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub1.yaml, interval: 86400}
-  订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2.yaml, interval: 86400}
+  订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2.yaml, interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 300, lazy: true}}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml, interval: 86400, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300, lazy: true}}
 
 #include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
@@ -12,33 +12,24 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - DIRECT
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    exclude-filter: "DIRECT|MP"
+    exclude-filter: "(?i)(my|ta)"
   - name: Telegram
     type: select
     proxies:
     include-all-proxies: true
-    use: [订阅1, 订阅2, 订阅3]
-  - name: 中转
+    use: [订阅1]
+    exclude-filter: "(?i)(uk|lon)"
+  - name: SG中转
     type: select
     proxies:
-      - DIRECT
-    include-all-proxies: true
-    use: [订阅2]
-    exclude-filter: "中|MP"
+    use: [订阅1, 订阅2]
+    filter: "亚太|日本|Mega"
   - name: 流媒体
     type: select
     proxies:
     include-all-proxies: true
-    use: [订阅1, 订阅2, 订阅3]
-  - name: GIB
-    type: select
-    proxies:
-      - 节点选择
-    include-all-proxies: true
-    filter: "UK"
     use: [订阅1, 订阅2, 订阅3]
   - name: UIS
     type: select
@@ -46,7 +37,19 @@ proxy-groups:
       - 节点选择
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    filter: "Mega|美国"
+    filter: "Mega|美国"    
+  - name: GIB
+    type: select
+    proxies:
+      - 节点选择
+    include-all-proxies: true
+    filter: "(?i)(uk|lon)"
+    use: [订阅1, 订阅2, 订阅3]
+  - name: UK中转
+    type: select
+    proxies:
+    use: [订阅1]
+    filter: "(?i)(uk|lon|mega)"       
   - name: 容错规则
     type: select
     proxies: [节点选择]
@@ -68,7 +71,7 @@ find-process-mode: strict
 dns:
   enable: true
   ipv6: false
-  enhanced-mode: fake-ip
+  enhanced-mode: fake-ip   #记得关闭DNS覆写
   fake-ip-range: 198.18.0.1/16
   use-system-hosts: true
   prefer-h3: false
