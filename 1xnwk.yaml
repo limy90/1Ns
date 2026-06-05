@@ -14,48 +14,56 @@ proxy-groups:
     proxies:
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    exclude-filter: "(?i)(my|ta)"
+    
   - name: Telegram
     type: select
     proxies:
     include-all-proxies: true
     use: [订阅1]
-    exclude-filter: "(?i)(uk|lon)"
+    filter: "(?i)(sg|mega)"
+    
   - name: SG中转
     type: select
     proxies:
     use: [订阅1, 订阅2]
-    filter: "亚太|日本|Mega"
+    filter: "(?i)(优化|日本|Mega)"
+    
   - name: 流媒体
     type: select
     proxies:
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
+    
   - name: UIS
     type: select
     proxies:
       - 节点选择
     include-all-proxies: true
     use: [订阅1, 订阅2, 订阅3]
-    filter: "Mega|美国"    
+    filter: "(?i)(us|mega|美国)"
+    
   - name: GIB
     type: select
     proxies:
       - 节点选择
     include-all-proxies: true
-    filter: "(?i)(uk|lon)"
     use: [订阅1, 订阅2, 订阅3]
+    filter: "(?i)(uk|lon|英国)"
+    
   - name: UK中转
     type: select
     proxies:
     use: [订阅1]
-    filter: "(?i)(uk|lon|mega)"       
+    filter: "(?i)(uk|lon|mega|英国)"
+    
   - name: 容错规则
     type: select
     proxies: [节点选择]
+    
   - name: 无需代理
     type: select
     proxies: [DIRECT]
+    
   - name: 广告拦截
     type: select
     proxies: [REJECT,DIRECT]
