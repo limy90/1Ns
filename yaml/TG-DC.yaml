@@ -66,6 +66,7 @@ payload:
   - IP-CIDR6,2a0a:f280:203::/48,no-resolve
   - IP-ASN,62041,no-resolve
   - IP-ASN,211157,no-resolve
-  
+
+  - DOMAIN-SUFFIX,linux.do
   #- IP-CIDR6,2a0a:f280::/29,no-resolve
   #- IP-CIDR,91.108.0.0/16,no-resolve  
