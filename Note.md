@@ -9,6 +9,14 @@
 - [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
 - [RTT测试网址](https://www.calmxin.com/archives/clash-testlink.html)
 
+```
+https://speed.cloudflare.com/__down?bytes=104857600
+单位为Bytes
+100MB = 104857600Bytes
+200MB = 209715200Bytes
+500MB = 524288000Bytes
+1GB = 1073741824Byte
+```
  ### ruleset 排序原则：
 - 重要直连分流规则 > 去广告规则 > 小分流 > 国内外大分流 > 补充规则
 - 策略组的排序非常重要，因为分流策略组的匹配是按照至上而下收录，匹配到了就停止不再往下
