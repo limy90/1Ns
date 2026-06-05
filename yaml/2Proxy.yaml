@@ -5,7 +5,6 @@ payload:
   - DOMAIN-SUFFIX,nixore.net
   - DOMAIN-KEYWORD,nvidia
   - DOMAIN-SUFFIX,bt.sb
-
   - DOMAIN-KEYWORD,challenges
   - DOMAIN-KEYWORD,warframe
   - DOMAIN-KEYWORD,thunderbird
