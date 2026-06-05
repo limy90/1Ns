@@ -7,6 +7,7 @@
 - [虚空终端 Docs](https://wiki.metacubex.one/config/rules/)
 - [海豚测速 - 网络代理工具箱](https://www.haitunt.org/app.html)
 - [CDN查询](https://www.cdnplanet.com/tools/cdnfinder)
+- [RTT测试网址](https://www.calmxin.com/archives/clash-testlink.html)
 
  ### ruleset 排序原则：
 - 重要直连分流规则 > 去广告规则 > 小分流 > 国内外大分流 > 补充规则
