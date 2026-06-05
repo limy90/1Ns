@@ -13,7 +13,8 @@ payload:
   - DOMAIN-KEYWORD,challenges
   - DOMAIN-KEYWORD,warframe
   - DOMAIN-KEYWORD,thunderbird
-
+  - DOMAIN-SUFFIX,immersivetranslate.com
+  
 # NAME: Binance
   - DOMAIN-SUFFIX,binance.cc
   - DOMAIN-SUFFIX,binance.cloud
