@@ -1,18 +1,15 @@
 payload:
-  - DOMAIN-KEYWORD,warframe
-  - DOMAIN-KEYWORD,thunderbird
+  - DOMAIN-SUFFIX,828999.xyz
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,bambs.cc
   - DOMAIN-SUFFIX,nixore.net
   - DOMAIN-KEYWORD,nvidia
-  - DOMAIN-KEYWORD,thunderbird
-  - PROCESS-NAME,thunderbird.exe
   - DOMAIN-SUFFIX,bt.sb
-  - GEOSITE,cloudflare-cn
-  - GEOSITE,hcaptcha
+
   - DOMAIN-KEYWORD,challenges
   - DOMAIN-KEYWORD,warframe
   - DOMAIN-KEYWORD,thunderbird
+  - PROCESS-NAME,thunderbird.exe
   - DOMAIN-SUFFIX,immersivetranslate.com
   
 # NAME: Binance
