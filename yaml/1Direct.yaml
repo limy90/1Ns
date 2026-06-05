@@ -1,5 +1,6 @@
 payload:
   - DOMAIN-KEYWORD,cn
+  - DOMAIN-SUFFIX,linuxdo.org
   - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,trx.sd
   - DOMAIN-SUFFIX,tmall.com
