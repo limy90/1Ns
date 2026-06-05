@@ -53,8 +53,8 @@ proxy-groups:
   - name: UK中转
     type: select
     proxies:
-    use: [订阅1]
-    filter: "(?i)(uk|lon|mega|英国)"
+    use: [订阅1, 订阅2, 订阅3]
+    filter: "(?i)(uk|mega|英国)"
     
   - name: 容错规则
     type: select
