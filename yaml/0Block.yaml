@@ -14,8 +14,8 @@ payload:
   #- DOMAIN,i-lq.snssdk.com
   #- DOMAIN,is.snssdk.com
   - DOMAIN,mcs.snssdk.com
-  - DOMAIN,tnc3-alisc1.snssdk.com
-  - DOMAIN,tnc3-aliec2.snssdk.com
+  #- DOMAIN,tnc3-alisc1.snssdk.com
+  #- DOMAIN,tnc3-aliec2.snssdk.com
   - DOMAIN,security-lq.snssdk.com
   - DOMAIN,dig.bdurl.net
   - DOMAIN,activity-ag.awemeughun.com
@@ -26,7 +26,7 @@ payload:
   - DOMAIN,sf3-ttcdn-tos.pstatp.com
   - DOMAIN-SUFFIX,novelapp.ixigua.com
   - DOMAIN-SUFFIX,default.ixigua.com
-  - DOMAIN-KEYWORD,zijieapi
+  #- DOMAIN-KEYWORD,zijieapi
   - DOMAIN-SUFFIX,pglstatp-toutiao.com
   - DOMAIN-SUFFIX,byteorge.com
   - DOMAIN-SUFFIX,bytegoofy.com
