@@ -29,7 +29,7 @@ payload:
   #- DOMAIN-KEYWORD,zijieapi
   - DOMAIN-SUFFIX,pglstatp-toutiao.com
   - DOMAIN-SUFFIX,byteorge.com
-  #- DOMAIN-SUFFIX,bytegoofy.com
+  - DOMAIN-SUFFIX,bytegoofy.com
   - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
   - DOMAIN,gurd.snssdk.com
   - IP-CIDR,49.71.37.101/32,no-resolve
