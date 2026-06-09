@@ -10,9 +10,9 @@ payload:
   # ===== 1. 字节系基础广告规则 =====
   - DOMAIN,p6-ad-sign.byteimg.com
   - DOMAIN,p9-ad-sign.byteimg.com
-  - DOMAIN,i.snssdk.com
-  - DOMAIN,i-lq.snssdk.com
-  - DOMAIN,is.snssdk.com
+  #- DOMAIN,i.snssdk.com
+  #- DOMAIN,i-lq.snssdk.com
+  #- DOMAIN,is.snssdk.com
   - DOMAIN,mcs.snssdk.com
   - DOMAIN,tnc3-alisc1.snssdk.com
   - DOMAIN,tnc3-aliec2.snssdk.com
@@ -28,6 +28,8 @@ payload:
   - DOMAIN-SUFFIX,default.ixigua.com
   - DOMAIN-KEYWORD,zijieapi
   - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  - DOMAIN-SUFFIX,byteorge.com
+  - DOMAIN-SUFFIX,bytegoofy.com
   - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
   - DOMAIN,gurd.snssdk.com
   - IP-CIDR,49.71.37.101/32,no-resolve
