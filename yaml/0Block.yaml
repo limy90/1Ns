@@ -6,3 +6,33 @@ payload:
   - DOMAIN-SUFFIX,adobegenuine.com
   - DOMAIN-KEYWORD,mcdn.bilivideo.cn
   - DOMAIN-KEYWORD,updates.ghub.logitechg.com
+
+  # ===== 1. 字节系基础广告规则 =====
+  - DOMAIN,p6-ad-sign.byteimg.com
+  - DOMAIN,p9-ad-sign.byteimg.com
+  - DOMAIN,i.snssdk.com
+  - DOMAIN,i-lq.snssdk.com
+  - DOMAIN,is.snssdk.com
+  - DOMAIN,mcs.snssdk.com
+  - DOMAIN,tnc3-alisc1.snssdk.com
+  - DOMAIN,tnc3-aliec2.snssdk.com
+  - DOMAIN,security-lq.snssdk.com
+  - DOMAIN,dig.bdurl.net
+  - DOMAIN,activity-ag.awemeughun.com
+  - DOMAIN,v6-novelapp.ixigua.com
+  - DOMAIN,msync-im1-vip6-std.easemob.com
+  - DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+  - DOMAIN,api.iegadp.qq.com
+  - DOMAIN,sf3-ttcdn-tos.pstatp.com
+  - DOMAIN-SUFFIX,novelapp.ixigua.com
+  - DOMAIN-SUFFIX,default.ixigua.com
+  - DOMAIN-KEYWORD,zijieapi
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+  - DOMAIN,gurd.snssdk.com
+  - IP-CIDR,49.71.37.101/32,no-resolve
+  - IP-CIDR,117.71.105.23/32,no-resolve
+  - IP-CIDR,218.94.207.205/32,no-resolve
+  - IP-CIDR,117.92.229.188/32,no-resolve
+  - IP-CIDR,101.36.166.16/32,no-resolve
+  - IP-CIDR,180.96.2.114/32,no-resolve
