@@ -1,7 +1,3 @@
 payload:
   - DOMAIN-SUFFIX,trxg.de
-  - DOMAIN-SUFFIX,sis001.com
-  - DOMAIN-SUFFIX,haijiao.com
-  - DOMAIN-SUFFIX,laowang.vip
-  - DOMAIN-SUFFIX,cool18.com
   - PROCESS-NAME,Cherry Studio.exe
