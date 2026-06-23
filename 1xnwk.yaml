@@ -20,13 +20,13 @@ proxy-groups:
     proxies:
     include-all-proxies: true
     use: [订阅1]
-    filter: "(?i)(sg|mega)"
+    filter: "(?i)(sg)"
     
   - name: SG中转
     type: select
     proxies:
     use: [订阅1, 订阅2]
-    filter: "(?i)(优化|日本|Mega)"
+    filter: "(?i)(Mega|倍)"
     
   - name: 流媒体
     type: select
@@ -115,10 +115,10 @@ geo-auto-update: true
 geodata-loader: standard
 geo-update-interval: 24
 geox-url:
-  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
-  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb
-  asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb  
+  geoip: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+  geosite: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+  mmdb: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+  asn: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb 
 tun:
   enable: true
   stack: mixed
@@ -234,13 +234,13 @@ rule-providers:
     interval: 8640000
 
 rules:
+  - RULE-SET,0Block,广告拦截,no-resolve
+  - GEOSITE,category-ads-all,广告拦截 
   - GEOIP,LAN,无需代理
   - RULE-SET,1Direct,无需代理
   - RULE-SET,2Proxy,节点选择
   - GEOSITE,googlefcm,无需代理
   - GEOSITE,google-cn,无需代理
-  - RULE-SET,0Block,广告拦截,no-resolve
-  - GEOSITE,category-ads-all,广告拦截
 
   - RULE-SET,Telegram,Telegram
 
@@ -259,6 +259,8 @@ rules:
   - RULE-SET,UIS,UIS
   - RULE-SET,Github,UIS
 
+  - GEOSITE,cloudflare-cn,节点选择
+  - GEOSITE,hcaptcha,节点选择
   - GEOSITE,cloudflare,节点选择
   - GEOSITE,google,节点选择
   - GEOSITE,microsoft,节点选择
