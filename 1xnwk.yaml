@@ -75,7 +75,10 @@ log-level: info
 unified-delay: true
 tcp-concurrent: true
 find-process-mode: strict
-
+profile:
+  store-selected: true
+  store-fake-ip: true
+  
 dns:
   enable: true
   ipv6: false
@@ -101,13 +104,11 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
 
-profile:
-  store-selected: true
-  store-fake-ip: false
-
-sniffer:
+niffer:
   enable: true
-  parse-pure-ip: true
+  override-destination: false
+  parse-pure-ip: false
+  force-dns-mapping: true
   sniff:
     TLS:
      ports: [443, 8443] 
@@ -121,7 +122,6 @@ geodata-mode: true
 geo-auto-update: true
 geodata-loader: standard
 geo-update-interval: 24
-
 geox-url:
   geoip: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
   geosite: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
@@ -132,14 +132,13 @@ tun:
   enable: true
   stack: mixed
   auto-route: true
+  auto-redirect: true
   auto-detect-interface: true
-  dns-hijack:
-    - any:53
-    - tcp://any:53
+  dns-hijack: [any:53, "tcp://any:53"]
   mtu: 1500
   strict-route: true
   udp-timeout: 300
-  endpoint-independent-nat: false
+  endpoint-independent-nat: true
 
 
 rule-providers:
