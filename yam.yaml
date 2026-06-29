@@ -6,7 +6,7 @@ proxy-providers:
   订阅1: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub1.yaml,interval: 0,health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
-
+  
 #include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
 proxy-groups:
   - {name: 节点选择, type: select, proxies: [], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3]}
@@ -39,7 +39,6 @@ dns:
   respect-rules: true
   fake-ip-filter:
     - 'rule-set:fake-ip-filter'
-
   default-nameserver:
     - tls://223.5.5.5
     - tls://223.6.6.6
@@ -67,7 +66,6 @@ niffer:
       override-destination: true
     QUIC:
       ports: [443, 8443] 
-
 geodata-mode: true
 geo-auto-update: true
 geodata-loader: standard
@@ -117,31 +115,25 @@ rules:
   - RULE-SET,steamcn,DIRECT
   - GEOSITE,googlefcm,DIRECT
   - GEOSITE,google-cn,DIRECT
-
   - RULE-SET,Telegram,Telegram
-
   - GEOSITE,twitch,流媒体
   - GEOSITE,youtube,流媒体
   - GEOSITE,pikpak,流媒体
-
   - RULE-SET,GIB,GIB
   - RULE-SET,Whatsapp,GIB
   - GEOSITE,meta,GIB
   - GEOSITE,paypal,GIB
   - GEOSITE,tiktok,GIB
-
   - GEOSITE,x,UIS
   - RULE-SET,AI,UIS
   - RULE-SET,UIS,UIS
   - GEOSITE,github,UIS
-
   - RULE-SET,steam,节点选择
   - GEOSITE,cloudflare-cn,节点选择
   - GEOSITE,hcaptcha,节点选择
   - GEOSITE,cloudflare,节点选择
   - GEOSITE,google,节点选择
   - GEOSITE,microsoft,节点选择
-
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT,no-resolve
   # - NETWORK,UDP,REJECT  #拒绝所有剩余 UDP
