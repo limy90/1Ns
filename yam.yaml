@@ -97,7 +97,6 @@ rule-providers:
   steam: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"}
   steamcn: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"}
   ads: { <<: *mrss, url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"}
-  pikpak: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pikpak.mrs"}
   0Block: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/0Block.yaml", path: ./ruleset/0Block.yaml }
   1Direct: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/1Direct.yaml", path: ./ruleset/1Direct.yaml }
   2Proxy: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/2Proxy.yaml", path: ./ruleset/2Proxy.yaml }
@@ -123,7 +122,7 @@ rules:
 
   - GEOSITE,twitch,流媒体
   - GEOSITE,youtube,流媒体
-  - RULE-SET,pikpak,流媒体
+  - GEOSITE,pikpak,流媒体
 
   - RULE-SET,GIB,GIB
   - RULE-SET,Whatsapp,GIB
