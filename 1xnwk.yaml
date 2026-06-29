@@ -9,64 +9,14 @@ proxy-providers:
 
 #include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
 proxy-groups:
-  - name: 节点选择
-    type: select
-    proxies:
-    include-all-proxies: true
-    use: [订阅1, 订阅2, 订阅3]
-    
-  - name: Telegram
-    type: select
-    proxies:
-    include-all-proxies: true
-    use: [订阅1]
-    filter: "(?i)(sg)"
-    
-  - name: SG中转
-    type: select
-    proxies:
-    use: [订阅1, 订阅2]
-    filter: "(?i)(Mega|倍)"
-    
-  - name: 流媒体
-    type: select
-    proxies:
-    include-all-proxies: true
-    use: [订阅1, 订阅2, 订阅3]
-    
-  - name: UIS
-    type: select
-    proxies:
-      - 节点选择
-    include-all-proxies: true
-    use: [订阅1, 订阅2, 订阅3]
-    filter: "(?i)(us|mega|美国)"
-    
-  - name: GIB
-    type: select
-    proxies:
-      - 节点选择
-    include-all-proxies: true
-    use: [订阅1, 订阅2, 订阅3]
-    filter: "(?i)(uk|lon|英国)"
-    
-  - name: UK中转
-    type: select
-    proxies:
-    use: [订阅1, 订阅2, 订阅3]
-    filter: "(?i)(uk|英国|mega)"
-    
-  - name: 容错规则
-    type: select
-    proxies: [节点选择]
-    
-  - name: 无需代理
-    type: select
-    proxies: [DIRECT]
-    
-  - name: 广告拦截
-    type: select
-    proxies: [REJECT,DIRECT]
+  - {name: 节点选择, type: select, proxies: [], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3]}
+  - {name: Telegram, type: select, proxies: [], include-all-proxies: true, use: [订阅1], filter: "(?i)(sg)"}
+  - {name: SG中转, type: select, proxies: [], use: [订阅1, 订阅2], filter: "(?i)(Mega|优化|163)"}
+  - {name: 流媒体, type: select, proxies: [], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3]}
+  - {name: UIS, type: select, proxies: [节点选择], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3], filter: "(?i)(us|mega|美国)"}
+  - {name: GIB, type: select, proxies: [节点选择], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3], filter: "(?i)(uk|lon|英国)"}
+  - {name: UK中转, type: select, proxies: [DIRECT], use: [订阅1, 订阅2, 订阅3], filter: "(?i)(uk|英国|mega)"}
+  - {name: 容错规则, type: select, proxies: [节点选择]}
 
 mixed-port: 7897
 allow-lan: true
@@ -140,94 +90,35 @@ tun:
   udp-timeout: 300
   endpoint-independent-nat: true
 
-
+rule-anchor:
+  GXMD: &GXMD {type: http, behavior: classical, interval: 8640000}
+  mrss: &mrss {type: http, interval: 86400, behavior: domain, format: mrs}
 rule-providers:
-  0Block:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/0Block.yaml"
-    path: ./ruleset/0Block.yaml
-    interval: 8640000
-
-  1Direct:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/1Direct.yaml"
-    path: ./ruleset/1Direct.yaml  #SteamCN Download
-    interval: 8640000        
-    
-  2Proxy:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/2Proxy.yaml"
-    path: ./ruleset/2Proxy.yaml
-    interval: 8640000
-    
-  UIS:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/4UIS.yaml"
-    path: ./ruleset/UIS.yaml
-    interval: 8640000
-
-  GIB:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/5GIB.yaml"
-    path: ./ruleset/GIB.yaml
-    interval: 8640000
-    
-  Telegram:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/TG-DC.yaml"
-    path: ./ruleset/Telegram.yaml
-    interval: 8640000
-
-  Pikpak:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/PikPak.yaml"
-    path: ./ruleset/pikpak.yaml
-    interval: 8640000        
-
-  fake-ip-filter:
-    type: http
-    behavior: domain
-    format: text
-    interval: 8640000
-    url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
-    path: ./ruleset/fake_ip_filter.list
-
-  Whatsapp:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.yaml"
-    path: ./ruleset/whatsapp.yaml
-    interval: 8640000
-
-  Github:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.yaml"
-    path: ./ruleset/github.yaml
-    interval: 8640000
-    
-  AI:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/A1.yaml"
-    path: ./ruleset/AI.yaml
-    interval: 8640000
-
+  steamcn: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"}
+  steam_domain: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"}
+  ads: { <<: *mrss, url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"}
+  0Block: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/0Block.yaml", path: ./ruleset/0Block.yaml }
+  1Direct: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/1Direct.yaml", path: ./ruleset/1Direct.yaml }
+  2Proxy: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/2Proxy.yaml", path: ./ruleset/2Proxy.yaml }
+  UIS: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/4UIS.yaml", path: ./ruleset/UIS.yaml }
+  GIB: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/5GIB.yaml", path: ./ruleset/GIB.yaml }
+  Telegram: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/TG-DC.yaml", path: ./ruleset/Telegram.yaml }
+  Pikpak: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/PikPak.yaml", path: ./ruleset/pikpak.yaml }
+  AI: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/A1.yaml", path: ./ruleset/AI.yaml }
+  fake-ip-filter: { <<: *GXMD, behavior: domain, format: text, url: "https://raw.githubusercontent.com/juewuy/ShellCrash/refs/heads/dev/public/fake_ip_filter.list", path: ./ruleset/fake_ip_filter.list }
+  Whatsapp: { <<: *GXMD, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.yaml", path: ./ruleset/whatsapp.yaml }
+  Github: { <<: *GXMD, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.yaml", path: ./ruleset/github.yaml }
+ 
 rules:
-  - RULE-SET,0Block,广告拦截,no-resolve
-  - GEOSITE,category-ads-all,广告拦截 
-  - GEOIP,LAN,无需代理
-  - RULE-SET,1Direct,无需代理
-  - RULE-SET,2Proxy,节点选择
-  - GEOSITE,googlefcm,无需代理
-  - GEOSITE,google-cn,无需代理
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT     #禁用QUIC
+  - RULE-SET,0Block,REJECT
+  - GEOSITE,category-ads-all,REJECT
+  - RULE-SET,ads,REJECT
+  - GEOIP,LAN,DIRECT,no-resolve
+  - RULE-SET,1Direct,DIRECT
+  - RULE-SET,steamcn,DIRECT
+  - GEOSITE,googlefcm,DIRECT
+  - GEOSITE,google-cn,DIRECT
 
   - RULE-SET,Telegram,Telegram
 
@@ -246,15 +137,14 @@ rules:
   - RULE-SET,UIS,UIS
   - RULE-SET,Github,UIS
 
+  - RULE-SET,steam_domain,节点选择
   - GEOSITE,cloudflare-cn,节点选择
   - GEOSITE,hcaptcha,节点选择
   - GEOSITE,cloudflare,节点选择
   - GEOSITE,google,节点选择
   - GEOSITE,microsoft,节点选择
 
-  - GEOSITE,cn,无需代理
-  - GEOSITE,steam@cn,无需代理
-  - GEOIP,cn,无需代理,no-resolve
-  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT     #禁用QUIC
+  - GEOSITE,cn,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
   # - NETWORK,UDP,REJECT  #拒绝所有剩余 UDP
   - MATCH,节点选择
