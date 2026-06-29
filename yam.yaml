@@ -116,6 +116,7 @@ rules:
   - GEOSITE,googlefcm,DIRECT
   - GEOSITE,google-cn,DIRECT
   - RULE-SET,Telegram,Telegram
+  - GEOSITE,telegram,Telegram
   - GEOSITE,twitch,流媒体
   - GEOSITE,youtube,流媒体
   - GEOSITE,pikpak,流媒体
