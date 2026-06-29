@@ -91,23 +91,23 @@ tun:
   endpoint-independent-nat: true
 
 rule-anchor:
-  GXMD: &GXMD {type: http, behavior: classical, interval: 8640000}
+  yamll: &yamll {type: http, behavior: classical, interval: 8640000}
   mrss: &mrss {type: http, interval: 86400, behavior: domain, format: mrs}
 rule-providers:
+  steam: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"}
   steamcn: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"}
-  steam_domain: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"}
   ads: { <<: *mrss, url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"}
-  0Block: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/0Block.yaml", path: ./ruleset/0Block.yaml }
-  1Direct: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/1Direct.yaml", path: ./ruleset/1Direct.yaml }
-  2Proxy: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/2Proxy.yaml", path: ./ruleset/2Proxy.yaml }
-  UIS: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/4UIS.yaml", path: ./ruleset/UIS.yaml }
-  GIB: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/5GIB.yaml", path: ./ruleset/GIB.yaml }
-  Telegram: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/TG-DC.yaml", path: ./ruleset/Telegram.yaml }
-  Pikpak: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/PikPak.yaml", path: ./ruleset/pikpak.yaml }
-  AI: { <<: *GXMD, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/A1.yaml", path: ./ruleset/AI.yaml }
-  fake-ip-filter: { <<: *GXMD, behavior: domain, format: text, url: "https://raw.githubusercontent.com/juewuy/ShellCrash/refs/heads/dev/public/fake_ip_filter.list", path: ./ruleset/fake_ip_filter.list }
-  Whatsapp: { <<: *GXMD, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.yaml", path: ./ruleset/whatsapp.yaml }
-  Github: { <<: *GXMD, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.yaml", path: ./ruleset/github.yaml }
+  pikpak: { <<: *mrss, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pikpak.mrs"}
+  0Block: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/0Block.yaml", path: ./ruleset/0Block.yaml }
+  1Direct: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/1Direct.yaml", path: ./ruleset/1Direct.yaml }
+  2Proxy: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/2Proxy.yaml", path: ./ruleset/2Proxy.yaml }
+  UIS: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/4UIS.yaml", path: ./ruleset/UIS.yaml }
+  GIB: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/5GIB.yaml", path: ./ruleset/GIB.yaml }
+  Telegram: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/TG-DC.yaml", path: ./ruleset/Telegram.yaml }
+  AI: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/A1.yaml", path: ./ruleset/AI.yaml }
+  fake-ip-filter: { <<: *yamll, behavior: domain, format: text, url: "https://raw.githubusercontent.com/juewuy/ShellCrash/refs/heads/dev/public/fake_ip_filter.list", path: ./ruleset/fake_ip_filter.list }
+  Whatsapp: { <<: *yamll, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.yaml", path: ./ruleset/whatsapp.yaml }
+  Github: { <<: *yamll, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.yaml", path: ./ruleset/github.yaml }
  
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT     #禁用QUIC
@@ -124,7 +124,7 @@ rules:
 
   - GEOSITE,twitch,流媒体
   - GEOSITE,youtube,流媒体
-  - RULE-SET,Pikpak,流媒体
+  - RULE-SET,pikpak,流媒体
 
   - RULE-SET,GIB,GIB
   - RULE-SET,Whatsapp,GIB
@@ -137,7 +137,7 @@ rules:
   - RULE-SET,UIS,UIS
   - RULE-SET,Github,UIS
 
-  - RULE-SET,steam_domain,节点选择
+  - RULE-SET,steam,节点选择
   - GEOSITE,cloudflare-cn,节点选择
   - GEOSITE,hcaptcha,节点选择
   - GEOSITE,cloudflare,节点选择
