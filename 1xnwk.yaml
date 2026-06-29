@@ -107,7 +107,6 @@ rule-providers:
   AI: { <<: *yamll, url: "https://raw.githubusercontent.com/limy90/1Ns/refs/heads/main/yaml/A1.yaml", path: ./ruleset/AI.yaml }
   fake-ip-filter: { <<: *yamll, behavior: domain, format: text, url: "https://raw.githubusercontent.com/juewuy/ShellCrash/refs/heads/dev/public/fake_ip_filter.list", path: ./ruleset/fake_ip_filter.list }
   Whatsapp: { <<: *yamll, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.yaml", path: ./ruleset/whatsapp.yaml }
-  Github: { <<: *yamll, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.yaml", path: ./ruleset/github.yaml }
  
 rules:
   - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT     #禁用QUIC
@@ -135,7 +134,7 @@ rules:
   - GEOSITE,x,UIS
   - RULE-SET,AI,UIS
   - RULE-SET,UIS,UIS
-  - RULE-SET,Github,UIS
+  - GEOSITE,github,UIS
 
   - RULE-SET,steam,节点选择
   - GEOSITE,cloudflare-cn,节点选择
