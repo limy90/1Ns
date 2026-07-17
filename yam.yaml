@@ -3,23 +3,23 @@ proxies:
       - {name: SG, server: 1.2.3.4, port: 443, type: vless, uuid: 10b97903-a5d6-45b1-bd3c-60c3846d285e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 123456, short-id: "654321"}, servername: apple.com, client-fingerprint: chrome, network: tcp, dialer-proxy: "SG中转"}
       
 proxy-providers:
-  订阅1: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub1.yaml,interval: 0,health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
+  订阅1: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub1.yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   
 #include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
 proxy-groups:
-  - {name: 节点选择, type: select, proxies: [], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3]}
-  - {name: Telegram, type: select, proxies: [], include-all-proxies: true, use: [订阅1], filter: "(?i)(sg)"}
-  - {name: SG中转, type: select, proxies: [], use: [订阅1, 订阅2], filter: "(?i)(Mega|优化|163)"}
-  - {name: 流媒体, type: select, proxies: [], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3]}
-  - {name: UIS, type: select, proxies: [节点选择], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3], filter: "(?i)(us|mega|美国)"}
-  - {name: GIB, type: select, proxies: [节点选择], include-all-proxies: true, use: [订阅1, 订阅2, 订阅3], filter: "(?i)(uk|lon|英国)"}
-  - {name: UK中转, type: select, proxies: [DIRECT], use: [订阅1, 订阅2, 订阅3], filter: "(?i)(uk|英国|mega)"}
+  - {name: 节点选择, type: select, proxies: [], include-all-proxies: true, use: [订阅0, 订阅1, 订阅2, 订阅3]}
+  - {name: Telegram, type: select, proxies: [], include-all-proxies: true, use: [订阅0, 订阅1, 订阅2, 订阅3], filter: "(?i)(sg|新加坡)"}
+  - {name: SG中转, type: select, proxies: [DIRECT], use: [订阅0, 订阅1], filter: "(?i)(Mega|sg|优化|163)"}
+  - {name: 流媒体, type: select, proxies: [], include-all-proxies: true, use: [订阅0, 订阅2, 订阅3]}
+  - {name: UIS, type: select, proxies: [节点选择], include-all-proxies: true, use: [订阅0, 订阅1, 订阅2, 订阅3], filter: "(?i)(us|mega|美国)"}
+  - {name: GIB, type: select, proxies: [节点选择], include-all-proxies: true, use: [订阅0, 订阅1, 订阅2, 订阅3], filter: "(?i)(uk|lon|英国)"}
+  - {name: UK中转, type: select, proxies: [DIRECT], use: [订阅0, 订阅1, 订阅2, 订阅3], filter: "(?i)(uk|英国|mega)"}
   - {name: 容错规则, type: select, proxies: [节点选择]}
 
 mixed-port: 7897
-allow-lan: true
+allow-lan: false
 mode: rule
 log-level: info
 unified-delay: true
@@ -27,8 +27,8 @@ tcp-concurrent: true
 find-process-mode: strict
 profile:
   store-selected: true
-  store-fake-ip: true
-  
+  store-fake-ip: true  
+
 dns:
   enable: true
   ipv6: false
@@ -116,7 +116,6 @@ rules:
   - GEOSITE,googlefcm,DIRECT
   - GEOSITE,google-cn,DIRECT
   - RULE-SET,Telegram,Telegram
-  - GEOSITE,telegram,Telegram
   - GEOSITE,twitch,流媒体
   - GEOSITE,youtube,流媒体
   - GEOSITE,pikpak,流媒体
