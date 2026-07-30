@@ -1,5 +1,5 @@
 payload:
-  -IP-ASN,13335,no-resolve
+  - IP-ASN,13335,no-resolve
   - DOMAIN-SUFFIX,828999.xyz
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,bambs.cc
