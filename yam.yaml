@@ -6,7 +6,7 @@ proxy-providers:
   订阅1: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub1.yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   订阅2: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub2yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
   订阅3: {type: http, url: "https://ryanvanson.github.io/emptyyaml/empty.yaml", path: ./providers/sub3.yaml,interval: 86400, health-check: {enable: true, url: "http://www.apple.com/library/test/success.html", interval: 600, lazy: true}}
-  
+      
 #include-all-proxies: true  包含手动节点/use: [订阅1, 订阅2, 订阅3, 订阅4, 订阅5] 包含订阅节点/domain-strategy: ipv4-only 强制仅使用 IPv4
 proxy-groups:
   - {name: 节点选择, type: select, proxies: [], include-all-proxies: true, use: [订阅0, 订阅1, 订阅2]}
@@ -106,33 +106,22 @@ rule-providers:
   Whatsapp: { <<: *yamll, url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Whatsapp/Whatsapp.yaml", path: ./ruleset/whatsapp.yaml }
  
 rules:
-  # 拦截类规则
   #- AND,((NETWORK,UDP),(DST-PORT,443)),REJECT   # 禁用 QUIC
   - RULE-SET,0Block,REJECT
   - GEOSITE,category-ads-all,REJECT
   - RULE-SET,ads,REJECT
-
-  # 局域网直连
   - GEOIP,LAN,DIRECT,no-resolve
 
-  # 自定义规则
   - RULE-SET,1Direct,DIRECT
   - RULE-SET,steamcn,DIRECT
+  - GEOSITE,googlefcm,DIRECT
+  - GEOSITE,google-cn,DIRECT
   - RULE-SET,2Proxy,节点选择
   - RULE-SET,Telegram,Telegram
   - RULE-SET,GIB,GIB
   - RULE-SET,Whatsapp,GIB
-  - RULE-SET,AI,UIS
   - RULE-SET,UIS,UIS
   - RULE-SET,steam,节点选择
-
-    # Other
-  - GEOSITE,cloudflare-cn,节点选择
-  - GEOSITE,cloudflare,节点选择
-  - GEOSITE,microsoft,节点选择
-  - GEOSITE,googlefcm,DIRECT
-  - GEOSITE,google-cn,DIRECT
-  - GEOSITE,google,UIS
   - GEOSITE,twitch,流媒体
   - GEOSITE,youtube,流媒体
   - GEOSITE,pikpak,流媒体
@@ -141,6 +130,11 @@ rules:
   - GEOSITE,github,UIS
   - GEOSITE,paypal,GIB
   - GEOSITE,tiktok,GIB
+  - RULE-SET,AI,UIS
+  - GEOSITE,google,UIS
+  - GEOSITE,microsoft,节点选择
+  - GEOSITE,cloudflare-cn,节点选择
+  - GEOSITE,cloudflare,节点选择
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT,no-resolve
   # - NETWORK,UDP,REJECT  #拒绝剩余 UDP
